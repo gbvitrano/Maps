@@ -1,4 +1,3 @@
-
 <html><head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
 <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -17,14 +16,9 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene bene… c�
 
 # Passion mapping...
 
-<a href="http://github.gbvitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
-
-- [**Variante Generale al P.R.G. - Palermo - 2004**](http://github.gbvitrano.it/variante_generale/Zonizzazione.html) elaborata con Qgis e il plugin  qtiles con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
-=======
 <a href="http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
 
 - [**Variante Generale al P.R.G. - Palermo - 2004**](http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html) elaborata con Qgis e il plugin  qtiles con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
->>>>>>> origin/master
 
 <a href="http://github.gbvitrano.it/prg_pa_2004/zon_vin/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
 
