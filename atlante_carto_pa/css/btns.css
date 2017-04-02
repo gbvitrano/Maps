@@ -152,8 +152,8 @@
 
 .btn--gray-border:hover, .btn--gray-border:focus {
   background-color: #fff;
-  border-color: #ff9900;
-color:#ff9900 }
+  border-color: #febf00; 
+color:#febf00; }
 
 .btn--gray-border:active {
   background-color: #ccc;
@@ -197,12 +197,12 @@ color:#ff9900 }
 /* orange*/
 .btn--orange:link,.btn--orange:visited{
 	color:#fff;
-background-color:#ff9900;
+background-color:#febf00; 
 border-color:#555;
 border-width:2px;}
 
 .btn--orange:hover,.btn--orange:focus{color:#fff!important;
-background-color:#ff9900;
+background-color:#febf00; 
 border-color:#555;
 border-width:2px;}
 

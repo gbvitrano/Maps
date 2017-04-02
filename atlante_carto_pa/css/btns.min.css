@@ -35,7 +35,7 @@ color:#555}
 
 .btn--gray-border:hover,.btn--gray-border:focus{
 background-color:#fff;
-border-color:#ff9900;
+border-color:#febf00; 
 color:#ff9900}
 
 .btn--gray-border:active{
@@ -44,13 +44,13 @@ border-color:#ccc;
 color:#444}
 
 .btn--gray-border_a {
-background-color:#ff9900;
+background-color:#febf00; 
 border-color:#555;
 border-width:2px;
 color:#555}
 
 .btn--gray-border_a:hover,.btn--gray-border:focus{
-background-color:#ff9900;
+background-color:#febf00; 
 border-color:#555;
 color:#555}
 
@@ -79,12 +79,12 @@ border-color:#0063aa}
 /* orange*/
 .btn--orange:link,.btn--orange:visited{
 	color:#fff;
-background-color:#ff9900;
+background-color:#febf00; ;
 border-color:#555;
 border-width:2px;}
 
 .btn--orange:hover,.btn--orange:focus{color:#fff!important;
-background-color:#ff9900;
+background-color:#febf00; 
 border-color:#555;
 border-width:2px;}
 
