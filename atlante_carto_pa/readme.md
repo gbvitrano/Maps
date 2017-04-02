@@ -5,7 +5,7 @@
 
 [**Atlante delle cartografie tecniche storiche di Palermo**](http://github.gbvitrano.it/atlante_carto_pa/) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
-**Al momento sono stare rielaborare le seguenti carte tecniche:**
+**Al momento sono state rielaborare le seguenti carte tecniche:**
 - OMIRA 1935
 - IRTA 1956
 - SAS 1987
