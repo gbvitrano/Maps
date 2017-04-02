@@ -1,5 +1,4 @@
 # Palermo - Atlante delle cartografie tecniche storiche di Palermo
-**Data:** 1935-1937 **scala:** 1:5000 <br>
 **work in progress...**
 
 <a href="http://github.gbvitrano.it/atlante_carto_pa/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/atlante_carto_01.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
