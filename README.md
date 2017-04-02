@@ -16,7 +16,7 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene beneâ€¦ câ
 
 # Passion mapping...
 
-<a href="http://github.gbvitrano.it/atlante_carto_pa/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/atlante_carto_01.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
+<a href="http://github.gbvitrano.it/atlante_carto_pa/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/atlante_carto_02.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
 [**Atlante delle cartografie tecniche storiche di Palermo**](http://github.gbvitrano.it/atlante_carto_pa/) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
