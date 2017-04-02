@@ -50,8 +50,8 @@
 
 	L.TileLayer.Mask = L.TileLayer.extend({
 		options : {
-			maskWidth : 400,
-			maskHeight : 400,
+			maskWidth : 250,
+			maskHeight : 250,
 			maskUrl : maskUrlDefault
 		},
 		_tileEventHandler : {
