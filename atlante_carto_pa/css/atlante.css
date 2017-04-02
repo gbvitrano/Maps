@@ -44,6 +44,19 @@ padding:1px;
 .clip_omira:hover {opacity: 1;
   -webkit-filter: grayscale(100%); } 
   
+  
+    .clip_irta {width: 340px; height:
+ 340px; border-radius: 5px; 
+ -moz-border-radius: 5px; 
+ -webkit-border-radius: 5px;
+border: 1px solid #ccc;
+background-color:#fff; 
+padding:1px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.2) }
+
+.clip_irta:hover {opacity: 1;
+  -webkit-filter: grayscale(100%); } 
+  
 #bot { position:fixed; 
 top:10px;
 right:130px;
