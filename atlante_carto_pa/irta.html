@@ -58,10 +58,12 @@
     <!-- Tab panes -->
     <div class="sidebar-content active">
       <div class="sidebar-pane" id="home">
-        <h2 class="sidebar-header">Atlante - Carta Tecnica - Palermo<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h2>
+        <h2 class="sidebar-header">Atlante - Palermo<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h2>
             <h3 class="lorem">CARTA TECNICA DI PALERMO (IRTA)</h3>
         <p class="lorem"><strong>Data:</strong> 1955-1957 <strong>scala:</strong> 1:5000 <br>
         Supporto e tecnica di riproduzione: digitale numero fogli: 12<br><br>
+           Comparazione tra carta tecnica IRTA del 1955 con oggi. 
+L&rsquo;effetto &ldquo;occhio di bue&ldquo; ci permette di vedere come era la città al tempo in un particolare punto.<br><br>
   <strong>Descrizione:</strong> Al 1955 risalgono le riprese in bianco e nero effettuate dall’Istituto Rilievi Terrestri Aerei di Milano (IRTA) e conservate dalla C.G.R. di Parma da cui l’Aerofo-toteca.<br>La cartografia è composta da 4296 fotogrammi in bianco e nero, riprodotti sia su supporto cartaceo che digitale, che rappresentano gran parte delle province di Palermo, Trapani e Agrigento. Queste immagini, riprese sia ad alta che a bassa quota, documentano nitidamente una vasta porzione di territorio siciliano prima delle grandi trasformazioni urbani-stico-edilizie intervenute a partire dagli anni ’60.<br>Negli anni Ottanta, ha acquisito i fotogrammi comprendenti l’area della città di Palermo; è un volo di straordinario interesse in quanto documenta, con grande nitidezza e ricchezza di dettaglio, la città ed il territorio nel momento precedente la grande espansione urbanistico-edilizia. <br> <br>Dal libro <a href="http://www.cricd.it/files/pages/Repertorio_cart.pdf" title="Repertorio in formato PDF" target="_blank"> Repertorio cartografico & aerofotografico</a> - CRICD Palermo 01/03/2010</p>
 <p class="lorem"><strong>Bibliografia:</strong><br> 
   REPERTORIO CARTOGRAFICO E AEROFOTOGRAFICO<br> 
@@ -82,9 +84,9 @@ Cartografia IRTA anno 1956 - in dotazione al <a href="https://www.comune.palermo
         <ul>
           <li><a href="http://leafletjs.com/" title="Leaflet" target="_blank">Leaflet,</a> per creare l'interfaccia di web mapping; <br><br></li>
           <li><a href="https://github.com/mlevans/leaflet-hash" title="Leaflet-hash" target="_blank">Leaflet-hash</a>, per generare URL che contengono livello di zoom e posizione corrente;<br><br></li>
-           <li><a href="https://github.com/frogcat/leaflet-tileoverlay-mask" title="Leaflet-tileoverlay-mask" target="_blank">Leaflet-tileoverlay-mask</a>, per la sovrapposizione delle tile con effetto svg maschera;<br><br></li> 
+<li><a href="https://github.com/frogcat/leaflet-tileoverlay-mask" title="Leaflet-tileoverlay-mask" target="_blank">Leaflet-tileoverlay-mask</a>, per la sovrapposizione delle tile con effetto svg maschera, una sorta di effetto &ldquo;occhio di bue&ldquo; che ci permette di vedere come era la città al tempo in un particolare punto;<br><br></li>
           <li><a href="https://github.com/turbo87/sidebar-v2/" title="Sidebar-v2" target="_blank">Sidebar-v2</a>, per creare questa sidebar a scomparsa;<br><br></li>
-          <li><a href="http://mapwarper.net/" title="Map Warper" target="_blank">Map Warper</a>, è uno strumento open source per georeferenziare immagini, sviluppato, ospitato e mantenuto da <a href="https://twitter.com/tim_waters" title="Tim Waters" target="_blank">Tim Waters;<br><br></a></li>
+         <li><a href="http://mapwarper.net/" title="Map Warper" target="_blank">Map Warper</a>, è uno strumento open source per georeferenziare immagini, nato grazie al <a href="https://github.com/timwaters/mapwarper" title="timwaters/mapwarper" target="_blank">contributo</a> del progetto <a href="https://github.com/nypl-spacetime/" title="progetto spacetime" target="_blank">spacetime</a> della <a href="https://github.com/NYPL" title="Biblioteca Comunale di New York" target="_blank">Biblioteca Comunale di New York</a>,  sviluppato, ospitato e mantenuto da <a href="https://twitter.com/tim_waters" title="Tim Waters" target="_blank">Tim Waters</a>;<br><br></li>
           <li><a href="https://github.com/mrmrs/btns" title="btns" target="_blank">Btns</a>, è un piccolo modulo CSS che permette di inserire pulsanti reattivi.<br><br></li>
           
         </ul>
@@ -138,7 +140,7 @@ var basemap5 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
               });
 
 			       var basemap2 = L.tileLayer.mask("http://mapwarper.net/maps/tile/19792/{z}/{x}/{y}.png", {
-      attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Irta 1956 - Rielaborazione di: <a href="https://twitter.com/aborruso" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/cirospat" title="Ciro Spataro">@cirospat</a>, <a href="https://twitter.com/napo " title="Maurizio Napolitano">@napo</a> <a href=" https://twitter.com/Piersoft" title="Francesco Piero Paolicelli">@piersoft</a> e <a href="https://twitter.com/gbvitrano" title="Giovan Battista Vitrano">@gbvitrano</a>',
+      attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Irta 1956 - Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
 	  minZoom: 13,
       maxZoom: 17,
       maxNativeZoom: 17
