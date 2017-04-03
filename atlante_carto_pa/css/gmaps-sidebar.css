@@ -1,12 +1,13 @@
 .sidebar {
   position: absolute;
-  top: 0;
+  top: 40px;
   bottom: 0;
   width: 100%;
   overflow: hidden;
   z-index: 2000; }
   .sidebar.collapsed {
-    width: 40px; }
+    width: 40px;
+	top:40px; }
   @media (min-width: 768px) {
     .sidebar {
       top: 10px;
@@ -14,19 +15,22 @@
       transition: width 500ms; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .sidebar {
-      width: 305px; } }
+      width: 305px;
+	  top: 40px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .sidebar {
       width: 390px; } }
   @media (min-width: 1200px) {
     .sidebar {
-      width: 460px; } }
+      width: 460px; 
+	  top: 40px;} }
 
 .sidebar-left {
   left: 0; }
   @media (min-width: 768px) {
     .sidebar-left {
-      left: 10px; } }
+      left: 10px; 
+	  top: 40px;} }
 
 .sidebar-right {
   right: 0; }
