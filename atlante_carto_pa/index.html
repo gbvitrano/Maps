@@ -46,6 +46,9 @@
 <link rel="stylesheet" href="css/btns.min.css" type="text/css">
 <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="css/LControlMousePosition.css" rel="stylesheet" type="text/css">
+<link href="css/scalebar.css" rel="stylesheet" type="text/css">
+<link href="css/Leaflet_GraphicScale_min.css" rel="stylesheet" type="text/css">
+
 <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
 
  <!-- script -->
@@ -57,6 +60,8 @@
 <script src="js/tileoverlay/leaflet-tileoverlay-mask.js"></script>
 <script src="js/social/jquery_csbuttons.js"></script>
 <script src="js/mouseposition/LControlMousePosition.js"></script>
+<script type="text/javascript" src="js/graphicscale/Leaflet_GraphicScale_min.js"></script>
+
 </head>
 <body>
 <div id="sidebar" class="sidebar collapsed">
@@ -175,6 +180,7 @@ Cartografia OMIRA anno 1935 - in dotazione al <a href="https://www.comune.palerm
            <li><p class="lorem"><a href="https://github.com/frogcat/leaflet-tileoverlay-mask" title="Leaflet-tileoverlay-mask" target="_blank">Leaflet-tileoverlay-mask</a>, per la sovrapposizione delle tile con effetto svg maschera, una sorta di effetto &ldquo;occhio di bue&ldquo; che ci permette di vedere come era la città al tempo in un particolare punto;<br><br></li> </p>
           <li><p class="lorem"><a href="https://github.com/turbo87/sidebar-v2/" title="Sidebar-v2" target="_blank">Sidebar-v2</a>, per creare questa sidebar a scomparsa;<br><br></li></p>
           <li><p class="lorem"><a href="https://github.com/ardhi/Leaflet.MousePosition" title="Leaflet.MousePosition" target="_blank">Leaflet.MousePosition</a>, è un semplice controllo della posizione del mouse. Esso mostra le coordinate geografiche del puntatore del mouse, mentre viene spostato sulla mappa;<br><br></li></p>
+          <li><p class="lorem"><a href="https://github.com/nerik/leaflet-graphicscale" title="leaflet-graphicscale" target="_blank">Leaflet-graphicscale</a>, è un semplice barra di scala con effetto animato al cambio dello zoom;<br><br></li></p>
                    <li><p class="lorem"><a href="http://mapwarper.net/" title="Map Warper" target="_blank">Map Warper</a>, è uno strumento open source per georeferenziare immagini, nato grazie al <a href="https://github.com/timwaters/mapwarper" title="timwaters/mapwarper" target="_blank">contributo</a> del progetto <a href="https://github.com/nypl-spacetime/" title="progetto spacetime" target="_blank">spacetime</a> della <a href="https://github.com/NYPL" title="Biblioteca Comunale di New York" target="_blank">Biblioteca Comunale di New York</a>,  sviluppato, ospitato e mantenuto da <a href="https://twitter.com/tim_waters" title="Tim Waters" target="_blank">Tim Waters</a>;<br><br></li></p>
           <li><p class="lorem"><a href="https://github.com/mrmrs/btns" title="btns" target="_blank">Btns</a>, è un piccolo modulo CSS che permette di inserire pulsanti reattivi.<br><br></li></p>
         </ul>
@@ -191,6 +197,7 @@ Cartografia OMIRA anno 1935 - in dotazione al <a href="https://www.comune.palerm
 
 
         var map = L.map('map', {attributionControl:true}).setView([38.11127,13.3534422], 14 );
+		
 
         var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
@@ -205,7 +212,7 @@ var basemap1 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
       maxZoom: 17,
       maxNativeZoom: 17
               });
-		
+
         var basemap3 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
                 attribution: 'Source: ESRI Standard',
 				minZoom: 13,
@@ -237,6 +244,7 @@ var basemap5 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
 
         var overlays = {
           };
+
           var layerControl = new L.Control.Layers({'OSM': basemap0, 'Google Road': basemap1, 'Google Satellite': basemap5, 'ESRI Standard': basemap3, 'ESRI Satellite': basemap4},overlays,{collapsed: true},{position:'topright'});
          layerControl.addTo(map);
          map.on("mousemove", function(e) {
@@ -244,7 +252,13 @@ var basemap5 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
          }).zoomControl.setPosition("topleft");
 	        var hash = new L.Hash(map);
 			var sidebar = L.control.sidebar('sidebar').addTo(map);
-			L.control.mousePosition().addTo(map);
+   			L.control.mousePosition().addTo(map);
+				var graphicScale = L.control.graphicScale({
+		doubleLine: true,
+		fill: 'hollow',
+        showSubunits: true
+	}).addTo(map);
+	
   </script>
    
 <div id="bot" class="leaflet-control">
