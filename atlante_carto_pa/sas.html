@@ -38,13 +38,15 @@
 
  <!-- css -->
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/leaflet.css" rel="stylesheet" type="text/css"> 
 <link href="css/leaflet-sidebar.css" rel="stylesheet" type="text/css">
 <link href="css/gmaps-sidebar.css" rel="stylesheet" type="text/css">
 <link href="css/atlante.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/btns.min.css" type="text/css">
 <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/LControlMousePosition.css" rel="stylesheet" type="text/css">
+
 
 <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
 
@@ -56,6 +58,7 @@
 <script src="js/hash/leaflet-hash.js"></script>
 <script src="js/tileoverlay/leaflet-tileoverlay-mask.js"></script>
 <script src="js/social/jquery_csbuttons.js"></script>
+<script src="js/mouseposition/LControlMousePosition.js"></script>
 </head>
 <body>
 <div id="sidebar" class="sidebar collapsed">
@@ -68,6 +71,7 @@
       <li> <a href="http://www.cricd.it/pages.php?idpagina=13&idContenuto=3326" title="Book - Repertorio cartografico & aerofotografico" target="_blank" role="tab"><i class="fa fa-book" aria-hidden="true"></i></a></li>
           <li><a href="https://github.com/gbvitrano/Maps" title="github.com/gbvitrano/Maps" target="_blank"  role="tab"><i class="fa fa-github"></i></a></li>
        <li><a href="#info"  title="Informazioni"role="tab"><i class="fa fa-info"></i></a></li>
+       <li> <a href="http://#" title="Leggi l'aticolo" target="_blank" role="tab"><i class="fa fa-bookmark"></i></a></li> 
        <li><a href="#share"  title="Condividi questa mappa"role="tab"><i class="fa fa-share-alt"></i></a></li>
        
          </ul>
@@ -128,6 +132,7 @@ Cartografia SAS anno 1987 - in dotazione al <a href="https://www.comune.palermo.
           <li><p class="lorem"><a href="https://github.com/mlevans/leaflet-hash" title="Leaflet-hash" target="_blank">Leaflet-hash</a>, per generare URL che contengono livello di zoom e posizione corrente;<br><br></li></p>
            <li><p class="lorem"><a href="https://github.com/frogcat/leaflet-tileoverlay-mask" title="Leaflet-tileoverlay-mask" target="_blank">Leaflet-tileoverlay-mask</a>, per la sovrapposizione delle tile con effetto svg maschera, una sorta di effetto &ldquo;occhio di bue&ldquo; che ci permette di vedere come era la città al tempo in un particolare punto;<br><br></li> </p>
           <li><p class="lorem"><a href="https://github.com/turbo87/sidebar-v2/" title="Sidebar-v2" target="_blank">Sidebar-v2</a>, per creare questa sidebar a scomparsa;<br><br></li></p>
+          <li><p class="lorem"><a href="https://github.com/ardhi/Leaflet.MousePosition" title="Leaflet.MousePosition" target="_blank">Leaflet.MousePosition</a>, è un semplice controllo della posizione del mouse. Esso mostra le coordinate geografiche del puntatore del mouse, mentre viene spostato sulla mappa;<br><br></li></p>
                    <li><p class="lorem"><a href="http://mapwarper.net/" title="Map Warper" target="_blank">Map Warper</a>, è uno strumento open source per georeferenziare immagini, nato grazie al <a href="https://github.com/timwaters/mapwarper" title="timwaters/mapwarper" target="_blank">contributo</a> del progetto <a href="https://github.com/nypl-spacetime/" title="progetto spacetime" target="_blank">spacetime</a> della <a href="https://github.com/NYPL" title="Biblioteca Comunale di New York" target="_blank">Biblioteca Comunale di New York</a>,  sviluppato, ospitato e mantenuto da <a href="https://twitter.com/tim_waters" title="Tim Waters" target="_blank">Tim Waters</a>;<br><br></li></p>
           <li><p class="lorem"><a href="https://github.com/mrmrs/btns" title="btns" target="_blank">Btns</a>, è un piccolo modulo CSS che permette di inserire pulsanti reattivi.<br><br></li></p>
         </ul>
@@ -196,12 +201,13 @@ var basemap5 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
          }).zoomControl.setPosition("topleft");
 	        var hash = new L.Hash(map);
 			var sidebar = L.control.sidebar('sidebar').addTo(map);
+			L.control.mousePosition().addTo(map);
   </script>
    
 <div id="bot">
-      <a href="omira.html" title="Carta Tecnica Palermo - OMIRA 1935" target="_self" class="btn btn--s btn--gray-border"><b>OMIRA 1935</b></a>
-      <a href="irta.html" title="Carta Tecnica Palermo - IRTA 1956" target="_self" class="btn btn--s btn--gray-border"><b>IRTA 1956</b></a>
-      <a href="#" title="Carta Tecnica Palermo - SAS 1987"  target="_self"class="btn btn--s btn--orange"><b>SAS 1987</b></a>
+      <a href="index.html" title="Carta Tecnica Palermo - OMIRA 1935" target="_parent" class="btn btn--s btn--gray-border"><b>OMIRA 1935</b></a>
+      <a href="irta.html" title="Carta Tecnica Palermo - IRTA 1956" target="_parent" class="btn btn--s btn--gray-border"><b>IRTA 1956</b></a>
+      <a href="#" title="Carta Tecnica Palermo - SAS 1987"  target="_parent" class="btn btn--s btn--orange"><b>SAS 1987</b></a>
     </div>
     
 <div id="ods"><a href="http://opendatasicilia.it/" title="opendatasicilia.it" target="_blank"> 

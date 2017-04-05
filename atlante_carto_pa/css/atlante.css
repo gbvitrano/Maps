@@ -17,8 +17,8 @@ font: 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
 background-color: #fff;  }
 
 #ods { position:fixed; 
-bottom:48px; 
-right:10px; 
+bottom:51px; 
+right:17px; 
 z-index: 999;}
 
 .lorem {font-style: italic; 
@@ -37,8 +37,8 @@ text-decoration:underline; }
 a:active {color: #FF0000;
 text-decoration:none; }
 
-.clip_omira {width: 60px; height:
- 69px; border-radius: 5px; 
+.clip_omira {width: 60px; height: 69px; 
+border-radius: 5px; 
  -moz-border-radius: 5px; 
  -webkit-border-radius: 5px;
 border: 1px solid #ccc;
