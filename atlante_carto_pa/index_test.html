@@ -242,23 +242,21 @@ var basemap5 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
         }).addTo(map);
 		
 		
-					       var irta = L.tileLayer.mask("http://mapwarper.net/maps/tile/19792/{z}/{x}/{y}.png", {
+				  var irta = L.tileLayer.mask("http://mapwarper.net/maps/tile/19792/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Irta 1956 -Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
 	  minZoom: 13,
       maxZoom: 17,
       maxNativeZoom: 17
         });
 		
-					       var sas = L.tileLayer.mask("http://mapwarper.net/maps/tile/19785/{z}/{x}/{y}.png", {
+				var sas = L.tileLayer.mask("http://mapwarper.net/maps/tile/19785/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Sas 1987 - Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
 	  minZoom: 13,
       maxZoom: 17,
       maxNativeZoom: 17
         });
-    
 
-        var overlays = {'OMIRA 1935': omira, 'IRTA 1956': irta, 'SAS 1987': sas,
-          };
+        var overlays = {'OMIRA 1935': omira, 'IRTA 1956': irta, 'SAS 1987': sas,};
 
           var layerControl = new L.Control.Layers({'OSM': basemap0, 'Google Road': basemap1, 'Google Satellite': basemap5, 'ESRI Standard': basemap3, 'ESRI Satellite': basemap4},overlays,{collapsed: true},{position:'topright'});
          layerControl.addTo(map);
