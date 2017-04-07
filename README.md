@@ -18,7 +18,7 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene beneâ€¦ câ
 
 <a href="http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html"><img width="1000" src="http://egdisegno.studiovitrano.it/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
 
-- [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](hhttp://egdisegno.studiovitrano.it/variante_generale/prg_2015.html) elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
+- [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html) elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
 
 <a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
