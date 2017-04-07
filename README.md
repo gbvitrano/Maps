@@ -16,14 +16,19 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene bene… c�
 
 # Passion mapping...
 
+<a href="http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html"><img width="1000" src="http://egdisegno.studiovitrano.it/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
+
+- [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](hhttp://egdisegno.studiovitrano.it/variante_generale/prg_2015.html) elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
+
+
 <a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
-- **Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo**
+- **Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo**<br>
 [**Atlante delle cartografie tecniche storiche di Palermo**](http://github.gbvitrano.it/atlante_carto_pa/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
 <a href="http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
 
-- [**Variante Generale al P.R.G. - Palermo - 2004**](http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html) elaborata con Qgis e il plugin  qtiles con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
+- [**Variante Generale al P.R.G. - Palermo - 2004**](http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html) elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
 <a href="http://github.gbvitrano.it/prg_pa_2004/zon_vin/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
 
