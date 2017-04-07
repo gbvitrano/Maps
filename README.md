@@ -18,6 +18,7 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene bene… c�
 
 <a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
+- **Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo**
 [**Atlante delle cartografie tecniche storiche di Palermo**](http://github.gbvitrano.it/atlante_carto_pa/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
 <a href="http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
