@@ -453,7 +453,7 @@
 	}
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
-	border: 2px solid rgba(0,0,0,0.2);
+	/*border: 2px solid rgba(0,0,0,0.2);*/
 	background-clip: padding-box;
 	}
 
