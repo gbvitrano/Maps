@@ -17,6 +17,9 @@ Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene beneâ€¦ câ
 # Passion mapping...
 
 
+<a href="http://github.gbvitrano.it/atlante_palermo/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_palermo/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
+
+[**Atlante delle cartografie tecniche storiche di Palermo - (beta version 2.0) **](http://github.gbvitrano.it/atlante_palermo/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
 <a href="http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html"><img width="1000" src="http://egdisegno.studiovitrano.it/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
 
