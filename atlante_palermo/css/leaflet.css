@@ -350,8 +350,9 @@
     box-shadow: 0 1px 5px rgba(0,0,0,0.6);
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
-	width: 5px;
-	height: 5px;
+	width: 42px;
+	height: 42px;
+	border-radius: 40px;
 	}
 	
 .leaflet-control-layers .leaflet-control-layers-list,
