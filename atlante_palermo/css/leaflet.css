@@ -136,7 +136,7 @@
 	float: right;
 	}
 .leaflet-top .leaflet-control {
-	margin-top: 42px;
+	margin-top: 60px;
 	}
 .leaflet-bottom .leaflet-control {
 	margin-bottom: 10px;
@@ -327,7 +327,7 @@
 /* layers control */
 
 .leaflet-control-layers {
-/*	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	/*box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 	background: #fff;*/
 	border-radius: 5px;
 	}

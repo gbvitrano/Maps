@@ -217,6 +217,7 @@ Un ringraziamento particolare va a <a href="https://twitter.com/napo" target="_b
           <li><p class="lorem"><a href="https://github.com/nerik/leaflet-graphicscale" title="leaflet-graphicscale" target="_blank">Leaflet-graphicscale</a>, è un semplice barra di scala con effetto animato al cambio dello zoom;<br><br></li></p>
                    <li><p class="lorem"><a href="http://mapwarper.net/" title="Map Warper" target="_blank">Map Warper</a>, è uno strumento open source per georeferenziare immagini, nato grazie al <a href="https://github.com/timwaters/mapwarper" title="timwaters/mapwarper" target="_blank">contributo</a> del progetto <a href="https://github.com/nypl-spacetime/" title="progetto spacetime" target="_blank">spacetime</a> della <a href="https://github.com/NYPL" title="Biblioteca Comunale di New York" target="_blank">Biblioteca Comunale di New York</a>,  sviluppato, ospitato e mantenuto da <a href="https://twitter.com/tim_waters" title="Tim Waters" target="_blank">Tim Waters</a>;<br><br></li></p>
           <li><p class="lorem"><a href="https://github.com/mrmrs/btns" title="btns" target="_blank">Btns</a>, è un piccolo modulo CSS che permette di inserire pulsanti reattivi.<br><br></li></p>
+          <li><p class="lorem"><a href="https://github.com/consbio/Leaflet.Basemaps" title="Leaflet.Basemaps" target="_blank">Leaflet.Basemaps</a>, consente di creare un controllo dell'interfaccia utente per la scelta della mappa di base utilizzato sulla mappa.<br><br></li></p>
         </ul>
       </div>
     </div>
@@ -261,32 +262,20 @@ minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,
   minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,
 		  label: 'ESRI Satellite'
               }),
-	
-
 		        ];
-       
-	   
-	   
-	   
-	   
+				
 var omira = L.tileLayer.mask("http://mapwarper.net/maps/tile/19706/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank"  title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Omira 1935 - Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
-	  minZoom: 13,
-      maxZoom: 17,
-      maxNativeZoom: 17
-        }).addTo(map);
+minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,        }).addTo(map);
+
 var irta = L.tileLayer.mask("http://mapwarper.net/maps/tile/19792/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Irta 1956 -Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
-	  minZoom: 13,
-      maxZoom: 17,
-      maxNativeZoom: 17
-        });
+minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,   });
+
 var sas = L.tileLayer.mask("http://mapwarper.net/maps/tile/19785/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Sas 1987 - Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a>',
-	  minZoom: 13,
-      maxZoom: 17,
-      maxNativeZoom: 17
-        });
+minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,  });
+
 var overlaysmap =  {'Carta tecnica Omira 1935 ': omira, 'Carta tecnica Irta 1956': irta, 'Carta tecnica Sas 1987': sas,};
 
 var layerControl = new L.Control.Layers(overlaysmap);
@@ -313,9 +302,19 @@ var layerControl = new L.Control.Layers(overlaysmap);
   </script>
  
 <div id="bot" class="leaflet-control">
-      <a href="http://opendatasicilia.it/2017/04/06/osservare-il-cambiamento-di-una-citta-grazie-alla-cartografia-il-caso-di-palermo/" title="Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo " target="_parent" class="btn btn--s btn--orange"><b>Atlante Carte Tecniche di Palermo</b></a>
- <!--  <a href="irta.html" title="Carta Tecnica Palermo - IRTA 1956"  target="_parent" class="btn btn--s btn--gray-border"><b>IRTA 1956</b></a>
-      <a href="sas.html" title="Carta Tecnica Palermo - SAS 1987"  target="_parent" class="btn btn--s btn--gray-border"><b>SAS 1987</b></a>-->
+<table width="100%" style="margin-top:5px;"border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <th width="2%" rowspan="2" scope="col">&nbsp;</th>
+      <th width="23%" rowspan="2" align="left" scope="col"><a href="http://opendatasicilia.it/" target="_blank"><img src="images/ods_01.png" alt="" width="39" height="40" title="opendatasicilia.it"/></a></th>
+      <th colspan="2" rowspan="2" align="right" scope="col">     <a href="http://opendatasicilia.it/2017/04/06/osservare-il-cambiamento-di-una-citta-grazie-alla-cartografia-il-caso-di-palermo/" title="Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo " target="_blank" class="btn btn--s btn--gray-border"><b>Osservare il cambiamento di una città grazie alla cartografia</b></a></th>
+      <th width="2%" scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <th width="2%" scope="col">&nbsp;</th>
+    </tr>
+  </tbody>
+</table>
     </div> 
     
 <div id="ods"><a href="http://opendatasicilia.it/" title="opendatasicilia.it" target="_blank"> 
