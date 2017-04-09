@@ -12,7 +12,7 @@ transition:color .4s,background-color .4s,border .4s}
 
 .btn:hover,.btn:focus{color:#7FDBFF;border:1px solid #7FDBFF;-webkit-transition:background-color .3s,color .3s,border .3s;transition:background-color .3s,color .3s,border .3s}
 .btn:active{color:#0074D9;border:1px solid #0074D9;-webkit-transition:background-color .3s,color .3s,border .3s;transition:background-color .3s,color .3s,border .3s}
-.btn--s{font-size:10px}
+.btn--s{font-size:9.5px}
 .btn--m{font-size:16px}
 .btn--l{font-size:20px;border-radius:.25em!important}
 
