@@ -13,9 +13,9 @@
 }
 
 .basemap {
-    display: inline-block; /* todo: flexbox? */
-	/*display: table-row-group;*/
-    cursor: pointer;
+    display: inline-block; 
+	 todo: flexbox? 
+	     cursor: pointer;
 }
 .basemap.active img {
     border-color: orange;
