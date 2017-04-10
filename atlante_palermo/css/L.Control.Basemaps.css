@@ -1,6 +1,6 @@
 .basemaps {
-    padding: 4px;
-	top:-30px;
+    padding: 0px;
+	top:-55px;
 }
 .basemaps.closed .basemap {
     display: none;
@@ -11,11 +11,12 @@
 .basemaps.closed .basemap.alt h4 {
     display: none;
 }
-
+/* foglio di stile atlante cartografico palermo -
+ giovan battista vitrano per opendatasicilia.it */
 .basemap {
-    display: inline-block; /* todo: flexbox? */
-	/*display: table-row-group;*/
-    cursor: pointer;
+    display: inline-block; 
+	 todo: flexbox? 
+	     cursor: pointer;
 }
 .basemap.active img {
     border-color: orange;
@@ -24,7 +25,7 @@
 .basemap img {
     width: 42px;
     border: 2px solid #FFF;
-    margin: 0 2px;
+    margin: 5px 0px 5px 10px;
     border-radius: 40px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65)
 }
