@@ -12,10 +12,11 @@ transition:color .4s,background-color .4s,border .4s}
 
 .btn:hover,.btn:focus{color:#7FDBFF;border:1px solid #7FDBFF;-webkit-transition:background-color .3s,color .3s,border .3s;transition:background-color .3s,color .3s,border .3s}
 .btn:active{color:#0074D9;border:1px solid #0074D9;-webkit-transition:background-color .3s,color .3s,border .3s;transition:background-color .3s,color .3s,border .3s}
-.btn--s{font-size:9.5px}
+.btn--s{font-size:.75em}
 .btn--m{font-size:16px}
 .btn--l{font-size:20px;border-radius:.25em!important}
-
+/* foglio di stile atlante cartografico palermo -
+ giovan battista vitrano per opendatasicilia.it */
 .btn--full,.btn--full:link{border-radius:.25em;display:block;margin-left:auto;margin-right:auto;text-align:center;width:100%}
 .btn--black,.btn--black:link,.btn--black:visited{color:#fff;background-color:#111}
 .btn--black:hover,.btn--black:focus{color:#fff;background-color:#444;border-color:#444}
@@ -28,6 +29,10 @@ transition:color .4s,background-color .4s,border .4s}
 .btn--gray:active{background-color:#ccc;border-color:#ccc;color:#444}
 
 .btn--gray-border:link,.btn--gray-border:visited {
+width: 78%;float:right;
+/*right:2%;
+position:fixed
+*/
 background-color:#fff;
 border-color:#fff;
 border-width:1px;
@@ -63,8 +68,8 @@ background-color:#ccc;
 border-color:#ccc;
 color:#444}
 
-
-
+/* foglio di stile atlante cartografico palermo -
+ giovan battista vitrano per opendatasicilia.it */
 .btn--gray-dark:link,.btn--gray-dark:visited{background-color:#555;color:#eee}
 .btn--gray-dark:hover,.btn--gray-dark:focus{background-color:#333;border-color:#333;color:#eee}
 .btn--gray-dark:active{background-color:#777;border-color:#777;color:#eee}

@@ -11,7 +11,8 @@
 .basemaps.closed .basemap.alt h4 {
     display: none;
 }
-
+/* foglio di stile atlante cartografico palermo -
+ giovan battista vitrano per opendatasicilia.it */
 .basemap {
     display: inline-block; 
 	 todo: flexbox? 

@@ -77,7 +77,8 @@
         text-align: center; }
   .sidebar-tabs > ul + ul {
     bottom: 0; }
-
+/* foglio di stile atlante cartografico palermo -
+ giovan battista vitrano per opendatasicilia.it */
 .sidebar-content {
   position: absolute;
   top: 0;
