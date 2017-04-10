@@ -57,12 +57,11 @@
 
 */
 .btn--s {
-  font-size: 9.5px; }
+  font-size: 10px; }
 
 .btn--m {
   font-size: 16px; }
-/* foglio di stile atlante cartografico palermo -
- giovan battista vitrano per opendatasicilia.it */
+
 .btn--l {
   font-size: 20px;
   border-radius: 0.25em !important; }
