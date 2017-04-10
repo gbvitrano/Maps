@@ -56,8 +56,7 @@
   <a href="#" class="btn btn--l">
 
 */
-.btn--s {
-  font-size: 9.5px; }
+.btn--s{font-size:.9em}
 
 .btn--m {
   font-size: 16px; }
@@ -152,11 +151,18 @@
   color: #555; }*/
   
 .btn--gray-border:link,.btn--gray-border:visited {
+float:right;
+/*right:2%;
+position:fixed;
+width: 80%;
+*/
+text-align:justify;
 background-color:#fff;
 border-color:#fff;
 border-width:1px;
 color:#555;
-box-shadow:  0 3px 10px rgba(0,0,0,0.5);}
+box-shadow:  0 3px 10px rgba(0,0,0,0.5);
+}
 
 .btn--gray-border:hover, .btn--gray-border:focus {
   background-color: #fff;
