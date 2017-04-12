@@ -1,4 +1,6 @@
 # Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo (versione beta 2.0)
+**Le novità sono: <br>nuovi selettori per le mappa di base e mappe in overlay, ed il mantenimento di posizione e zoom nel cambio di mappa in overlay**
+
 
 <a href="http://github.gbvitrano.it/atlante_palermo/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_palermo/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
