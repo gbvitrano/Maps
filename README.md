@@ -15,7 +15,7 @@ Ma quando hai le robe giuste, è tutta un’altra cosa!...*"<br>
 Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene bene… c’è chi fa più robe, c’è chi fa più cose, ma se queste cose e queste robe li mettiamo al servizio del Paese, avremo tanti territori pieni di cose e di robe che funzionano e la gente ne ha bisogno, ma attenzione a con confondere le cose con le robe, altrimenti si impazzisce!..."*
 
 **Le mappe rialaborate con gli opendata sono realizzate con passione e sacrifici, fatte esclusivamente per IMPARARE ad usare strumenti Gis e WebGis, NON hanno alcun intento commerciale! L’unica finalità è esplorare le possibilità di rielaborazione e comunicazione offerte dagli [open data](https://it.wikipedia.org/wiki/Dati_aperti) o [dati pubblici](https://medium.com/open-data-stories/non-open-data-ma-dati-pubblici-la-metafora-dellacqua-b09ff1c24fe3).**
-Tutto il materiale da me rielaborato e pubblicato su github può essere clonato ed adattato liberamente ai propri scopi, con licenza:<br>[**CC BY 4.0 IT**[(https://creativecommons.org/licenses/by/4.0/deed.it)
+Tutto il materiale da me rielaborato e pubblicato su github può essere clonato ed adattato liberamente ai propri scopi, con licenza:<br>[**CC BY 4.0 IT**](https://creativecommons.org/licenses/by/4.0/deed.it)
 
 # Passion mapping...
 
