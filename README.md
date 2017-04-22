@@ -14,6 +14,9 @@ Ma quando hai le robe giuste, è tutta un’altra cosa!...*"<br>
 *"...quando c’è voglia di fare le cose e le robe, è solo questione di prime e seconde fasi…
 Se siamo in tanti a fare cose sul territorio sono sicuro che ci viene bene… c’è chi fa più robe, c’è chi fa più cose, ma se queste cose e queste robe li mettiamo al servizio del Paese, avremo tanti territori pieni di cose e di robe che funzionano e la gente ne ha bisogno, ma attenzione a con confondere le cose con le robe, altrimenti si impazzisce!..."*
 
+**Le mappe rialaborate con gli opendata sono realizzate con passione e sacrifici, sono fatte esclusivamente per IMPARARE ad usare strumenti Gis e non hanno alcun intento commerciale!**
+Tutto il materiale da me rielaborato e pubblicato su github può essere clonato ed adattato ai propri scopi, con licenza [**CC BY 4.0 IT**](https://creativecommons.org/licenses/by/4.0/deed.it)
+
 # Passion mapping...
 
 
