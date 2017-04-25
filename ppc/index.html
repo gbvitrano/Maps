@@ -12,7 +12,6 @@
          <!-- css -->
 <link href="lib/css/atlante_01.css" rel="stylesheet" type="text/css">
 <link href="lib/css/leaflet.css" rel="stylesheet" type="text/css">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/L.Control.Locate.min.css" />
 <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
@@ -26,6 +25,8 @@
 <link href="lib/css/leaflet-sidebar.css" rel="stylesheet" type="text/css">
 <link href="lib/css/gmaps-sidebar.css" rel="stylesheet" type="text/css">
 <link href="lib/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="lib/css/leaflet.zoomhome.css" rel="stylesheet" type="text/css">
+
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css"/> 
@@ -50,9 +51,10 @@
 <script src="lib/js/social/jquery_csbuttons.js"></script>
 <script src="lib/js/mouseposition/LControlMousePosition.js"></script>
 <script src="lib/js/graphicscale/Leaflet_GraphicScale_min.js"></script>  
-      
+<script src="lib/js/zoomhome/leaflet.zoomhome.js"></script>     
 <script src="lib/js/basemap/L.Control.Basemaps.js"></script>
 <script src="lib/js/print/leaflet.easyPrint.js"></script>
+
         <!-- script dati mappa -->
         <script src="data/UnitTerritorialeOmogenea0.js"></script>
         <script src="data/Viabilit1.js"></script>
@@ -62,7 +64,6 @@
         <script src="data/AMAreediammassamentosoccorsiColonnamobileVVF5.js"></script>
         <script src="data/ZoneAmmassamento6.js"></script>
         <script src="data/Zoneaccoglienza7.js"></script>      
-      
     </head>
     <body>
  <div id="sidebar" class="sidebar collapsed">
@@ -71,7 +72,7 @@
             <ul role="tablist">
                 <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
                 <li> <a href="mailto:coseerobe.gbvitrano@gmail.com" title="Email" role="tab"><i class="fa fa-envelope"></i></a></li>
-                 <li><a href="#wiki"  title="Glossario"role="tab"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>
+                 <li><a href="#wiki"  title="Glossario"role="tab"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
                   <li><a href="#info"  title="Informazioni"role="tab"><i class="fa fa-info"></i></a></li>
                  <li><a href="#share"  title="Condividi questa mappa"role="tab"><i class="fa fa-share-alt"></i></a></li>
             </ul>
@@ -172,7 +173,9 @@ Una piena conoscenza di questi aspetti è la premessa indispensabile per ridurre
 <li><p class="lorem"><a href="https://github.com/nerik/leaflet-graphicscale" title="leaflet-graphicscale" target="_blank">Leaflet-graphicscale</a>, &egrave;  un semplice barra di scala con effetto animato al cambio dello zoom;<br><br></li></p>
 <li><p class="lorem"><a href="https://github.com/consbio/Leaflet.Basemaps" title="Leaflet.Basemaps" target="_blank">Leaflet.Basemaps</a>, consente di creare un controllo dell'interfaccia utente per la scelta della mappa di base utilizzato sulla mappa.<br><br></li></p>
 <li><p class="lorem"><a href="https://github.com/ppete2/Leaflet.PolylineMeasure" title="Leaflet.PolylineMeasure" target="_blank">Leaflet.PolylineMeasure</a>, consente di misurare distanze con linee semplici, sistema metrico (metri, chilometri).<br><br></li></p>
+<li><p class="lorem"><a href="https://github.com/torfsen/leaflet.zoomhome" title="Leaflet.zoomhome" target="_blank">Leaflet.zoomhome</a>, aggiunge un pulsante Home al controllo zoom per ripristinare la visualizzazione.<br><br></li></p>
 <li><p class="lorem"><a href="https://github.com/rowanwins/leaflet-easyPrint" title="Leaflet-easyPrint" target="_blank">Leaflet-easyPrint</a>, un semplice plugin che aggiunge un'icona per stampare la mappa.<br><br></li></p>
+
 <li><p class="lorem">Icone per le tue mappe <a href="https://mapicons.mapsmarker.com/category/markers/stores/" title="Map Icons Collection" target="_blank"><img src="https://mapicons.mapsmarker.com/wp-content/uploads/2011/03/miclogo-88x31.gif" width="88" height="31" alt=""/></a> <br><br></li></p>
         </ul>
 </div>
@@ -188,11 +191,9 @@ Una piena conoscenza di questi aspetti è la premessa indispensabile per ridurre
                 return this._bounds;
             }
         });
-        var map = L.map('map', {
-            zoomControl:true, maxZoom:17, minZoom:12
-        }).fitBounds([[38.0498804,13.1671319278],[38.2245866,13.5274219722]]);
-        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> - Rielaborazione di: <a href="https://twitter.com/opendatasicilia" target="_blank" title="opendatasicilia">@opendatasicilia</a>');
-        var bounds_group = new L.featureGroup([]);
+var map = L.map('map', { zoomControl:false,  maxZoom:17, minZoom:12  }).fitBounds([[38.0498804,13.1671319278],[38.2245866,13.5274219722]]);
+map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> - Rielaborazione di: <a href="https://twitter.com/opendatasicilia" target="_blank" title="opendatasicilia">@opendatasicilia</a>');
+var bounds_group = new L.featureGroup([]);
 <!-- mappe di base -->	  
 var basemaps = [
 L.tileLayer('https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', { attribution: 'Dati cartografici &#9400; 2017 Google - <a href="https://www.google.com/intl/it_it/help/terms_maps.html">Termini</a>', minZoom: 12,  maxZoom: 18, maxNativeZoom: 18, label: 'Google Terrain'}),
@@ -200,8 +201,8 @@ L.tileLayer('https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', { attribution:
 	   L.tileLayer('http://a.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {attribution: '&#9400; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',minZoom: 12,  maxZoom: 18, maxNativeZoom: 18,label: 'OpenStreetMap monochrome'}),
 	  
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'Source: &#9400; ESRI Satellite', minZoom: 12,  maxZoom: 18, maxNativeZoom: 18, label: 'ESRI Satellite'}), ];
-		 <!-- funzioni mappa -->
-		
+
+<!-- funzioni mappa -->
         function setBounds() {
         }
         function geoJson2heat(geojson, weight) {
@@ -747,12 +748,15 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         L.control.layers(baseMaps,{'<img src="markers/ac_01.png"  height="32" /> Zone accoglienza': layer_Zoneaccoglienza7,'<img src="markers/manhole-jb6.png" height="32" /> Zone Ammassamento': layer_ZoneAmmassamento6,'<img src="markers/am_vvf.png" height="32" /> AM - Aree di ammassamento soccorsi - Colonna mobile VV.F': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,'<img src="markers/hospital.png" height="32" /> Aree ospedale': layer_Areeospedale4,'<img src="markers/ri.png" height="32"/> Aree rischio industriale<hr>': layer_Areerischioindustriale3,'Zonizzazione Aree<br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td>AC - Aree di accoglienza popolazione</td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td>AM - Aree di ammassamento soccorsi</td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td>AM - Aree di ammassamento soccorsi - Colonna mobile VV.F</td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td>AT - Aree di attesa popolazione</td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td>H - Ospedali</td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td>RI - Aree rischio industriale</td></tr></table><hr>': layer_ZonizzazioneAree2,'Viabilità<br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td>Viabilità principale</td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td>Viabilità secondaria</td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td>Viabilità terziaria</td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /> Unità Territoriale Omogenea': layer_UnitTerritorialeOmogenea0,}).addTo(map);
         setBounds();
 		<!-- strumenti di leaflet -->
+		
+				var zoomHome = L.Control.zoomHome();zoomHome.addTo(map);
 		var hash = new L.Hash(map);
 			   var sidebar = L.control.sidebar('sidebar').addTo(map);
+			  
 	   L.control.mousePosition().addTo(map);
 	    map.on("mousemove", function(e) {
 		baselayer.setCenter(e.containerPoint.x, e.containerPoint.y); e_sat.setCenter(e.containerPoint.x, e.containerPoint.y);
-         }).zoomControl.setPosition("topleft");
+         }) <!--.zoomControl.setPosition("topleft") -->;
 		 L.control.locate().addTo(map);
 		var measureControl = new L.Control.Measure({
             primaryLengthUnit: 'meters',
@@ -773,6 +777,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
             tileY: 0,
             tileZ: 1
         }));
+ 
         </script>
  <!-- header -->       
 <div id="bot" class="leaflet-control">
