@@ -17,7 +17,7 @@
             zoomOutText: '-',
             zoomOutTitle: 'Zoom out',
             zoomHomeIcon: 'home',
-            zoomHomeTitle: 'Home',
+            zoomHomeTitle: 'Reset Zoom',
             homeCoordinates: null,
             homeZoom: null
         },
