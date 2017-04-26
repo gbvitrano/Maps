@@ -63,7 +63,8 @@
         <script src="data/Areeospedale4.js"></script>
         <script src="data/AMAreediammassamentosoccorsiColonnamobileVVF5.js"></script>
         <script src="data/ZoneAmmassamento6.js"></script>
-        <script src="data/Zoneaccoglienza7.js"></script>      
+        <script src="data/Zoneaccoglienza7.js"></script>   
+        <script src="data/centroidiuto0.js"></script>   
     </head>
     <body>
  <div id="sidebar" class="sidebar collapsed">
@@ -85,16 +86,17 @@
 <div class="sidebar-content">
 <div class="sidebar-pane" id="home">
 <h2 class="sidebar-header">Piano Comunale Protezione Civile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h2>
+ <p class="lorem"><strong>Rielaborazione Piano Comunale di emergenza Protezione Civile di Palermo</strong> <a href="https://www.comune.palermo.it/opendata_dld.php?id=351" title="Opendata Piano Comunale di emergenza Protezione Civile, Palermo" target="_blank">da opendata Comunali</a></p>
  <p class="lorem"><strong>Il piano è stato redatto dall’Ufficio Protezione Civile e Sicurezza del Comune di Palermo</strong><br><br>
   <strong>Gruppo di lavoro:</strong><br>
 Arch. F.  Mereu – Responsabile del procedimento, Arch. A. Calì, Geom. R. Verga, Geom. G. Fontana<br><br>
 <strong>Gruppo di lavoro esterno:</strong><br>
-Prof. Dott. G. Giunta (consulente), Ing. G. Margiotta (consulente), Dott.ssa A. Giorgianni (consulente), Associazione Ingegneri di Protezione Civile Prov. PA, OO. VV. di Protezione Civile del Comune di Palermo. <br><br>
+Prof. Dott. G. Giunta (consulente), Ing. G. Margiotta (consulente), Dott.ssa A. Giorgianni (consulente), Associazione Ingegneri di Protezione Civile Prov. PA, OO. VV. di Protezione Civile del Comune di Palermo.</p>
  <img src="lib/images/ppc_02.jpg" width="450" height="450" class="clip_irta" title="Piano Comunale Protezione Civile - Palermo"alt="Protezione Civile - Palermo"/> <br>
-<p class="lorem"> Le tavole del Piano sono pubblicate nel formato <a href="https://acrobat.adobe.com/it/it/why-adobe/about-adobe-pdf.html" target="_blank">.pdf</a>, tutti i link delle tavole presenti in questa pagina rinviano al sito ufficiale del <a href="https://www.comune.palermo.it/" title="Comune di Palermo" target="_blank">Comune di Palermo</a> &#45; <a href="https://www.comune.palermo.it/noticext.php?id=4778" title="Piano Comunale Protezione Civile" target="_blank">Piano Comunale Protezione Civile</a><br><br> 
-  <em><strong>Le informazioni visibili e condivise in queste pagine non comportano la visualizzazione di dati sensibili.</strong></em><br>
+<p class="lorem"> Le tavole del Piano sono pubblicate nel formato <a href="https://acrobat.adobe.com/it/it/why-adobe/about-adobe-pdf.html" target="_blank">.pdf</a>, tutti i link delle tavole presenti in questa pagina rinviano al sito ufficiale del <a href="https://www.comune.palermo.it/" title="Comune di Palermo" target="_blank">Comune di Palermo</a> &#45; <a href="https://www.comune.palermo.it/noticext.php?id=4778" title="Piano Comunale Protezione Civile" target="_blank">Piano Comunale Protezione Civile</a></p> 
+<p class="lorem">  <em><strong>Le informazioni visibili e condivise in queste pagine non comportano la visualizzazione di dati sensibili.</strong></em><br>
   <em><strong>Data la natura esclusivamente informativa degli elaborati grafici e dei testi riportati, questi non costituiscono atti ufficiali.</strong></em><br>
-  <em><strong>Per accedere agli atti ufficiali si rinvia agli elaborati definitivi allegati alle specifiche deliberazioni.</strong></em>
+  <em><strong>Per accedere agli atti ufficiali si rinvia agli elaborati definitivi allegati alle specifiche deliberazioni.</strong></em></p>
 </div>        
           
 <!-- Tab info -->
@@ -744,8 +746,198 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         });
         bounds_group.addLayer(layer_Zoneaccoglienza7);
         map.addLayer(layer_Zoneaccoglienza7);
+		
+			
+        function pop_centroidiuto0(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">ID</th>\
+                        <td>' + (feature.properties['ID'] !== null ? Autolinker.link(String(feature.properties['ID'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">UTO</th>\
+                        <td>' + (feature.properties['UTO'] !== null ? Autolinker.link(String(feature.properties['UTO'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+		        function style_centroidiuto0(feature) {
+            switch(feature.properties['UTO']) {
+                case 'A1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/a1.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'A2':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/a2.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'A3':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/a3.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'B1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/b1.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'B1.1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/b1_1.png',
+            iconSize: [37.0, 32.0]
+        }),
+            }
+                    break;
+                case 'B2':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/b2.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'C1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/c1.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'C2':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/c2.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'D1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/d1.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'D1.1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/d1_1.png',
+            iconSize: [37.0, 32.0]
+        }),
+            }
+                    break;
+                case 'D2':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/d2.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'D3':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/d3.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'E1':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/e1.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+                case 'E2':
+                    return {
+                pane: 'pane_centroidiuto0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/e2.png',
+            iconSize: [32.0, 32.0]
+        }),
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_centroidiuto0');
+        map.getPane('pane_centroidiuto0').style.zIndex = 400;
+        map.getPane('pane_centroidiuto0').style['mix-blend-mode'] = 'normal';
+        var layer_centroidiuto0 = new L.geoJson(json_centroidiuto0, {
+            attribution: '<a href=""></a>',
+            pane: 'pane_centroidiuto0',
+            onEachFeature: pop_centroidiuto0,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_centroidiuto0(feature))
+            }
+        });
+        bounds_group.addLayer(layer_centroidiuto0);
+        //map.addLayer(layer_centroidiuto0);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">	AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,'<img src="markers/manhole-jb6.png" height="32" /><span class="legenda1">AM - Aree di ammassamento soccorsi</span>': layer_ZoneAmmassamento6,'<img src="markers/am_vvf.png" height="32" /><span class="legenda1"> AM - Colonna mobile VV.F </span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,'<img src="markers/hospital.png" height="32" /><span class="legenda1">H Ospedali</span>': layer_Areeospedale4,'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr>': layer_Areerischioindustriale3,'<span class="legenda">Zonizzazione Aree</span><br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td><span class="legenda1">AC - Aree di accoglienza popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td><span class="legenda1">AM - Aree di ammassamento soccorsi</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td><span class="legenda1">AM - Colonna mobile VV.F</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td><span class="legenda1">AT - Aree di attesa popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td><span class="legenda1">H Ospedali</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td><span class="legenda1">RI - Aree rischio industriale</span> </td></tr></table><hr>': layer_ZonizzazioneAree2,'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">	AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,'<img src="markers/manhole-jb6.png" height="32" /><span class="legenda1">AM - Aree di ammassamento soccorsi</span>': layer_ZoneAmmassamento6,'<img src="markers/am_vvf.png" height="32" /><span class="legenda1"> AM - Colonna mobile VV.F </span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,'<img src="markers/hospital.png" height="32" /><span class="legenda1">H Ospedali</span>': layer_Areeospedale4,'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr>': layer_Areerischioindustriale3,'<span class="legenda">Zonizzazione Aree</span><br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td><span class="legenda1">AC - Aree di accoglienza popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td><span class="legenda1">AM - Aree di ammassamento soccorsi</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td><span class="legenda1">AM - Colonna mobile VV.F</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td><span class="legenda1">AT - Aree di attesa popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td><span class="legenda1">H Ospedali</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td><span class="legenda1">RI - Aree rischio industriale</span> </td></tr></table><hr>': layer_ZonizzazioneAree2,'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,'<img src="markers/a2.png" height="26" /><span class="legenda1"> Denominazione U.T.O.</span>': layer_centroidiuto0,}).addTo(map);
         setBounds();
 		<!-- strumenti di leaflet -->
 		
@@ -783,7 +975,8 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
 <div id="bot" class="leaflet-control">
 <div id="logo"><a href="http://opendatasicilia.it/" target="_blank"><img src="lib/images/logo_ods_b.png" alt="" height="60" title="opendatasicilia.it"/></a>  </div>  
 <div id="titolo"> 
-  <h1>Piano di emergenza Protezione Civile,<br>Palermo<br>Work in progress...</h1>
+  <h1>Palermo - Piano Comunale<br> di emergenza Protezione Civile<br>
+    <a href="https://www.comune.palermo.it/opendata_dld.php?id=351" title="Opendata Piano Comunale di emergenza Protezione Civile, Palermo" target="_blank">da opendata Comunali</a></h1>
    </div> 
 </div>
 <div id="ods"><a href="http://opendatasicilia.it/" title="opendatasicilia.it" target="_blank"> 
