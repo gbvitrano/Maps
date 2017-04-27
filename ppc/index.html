@@ -58,14 +58,20 @@
         <!-- script dati mappa -->
  <script src="data/UnitTerritorialeOmogenea0.js"></script>
 <script src="data/Viabilit1.js"></script>
-<script src="data/ZonizzazioneAree2.js"></script>
+<!--<script src="data/ZonizzazioneAree2.js"></script>-->
 <script src="data/Areerischioindustriale3.js"></script>
 <script src="data/Areeospedale4.js"></script>
 <script src="data/AMAreediammassamentosoccorsiColonnamobileVVF5.js"></script>
 <script src="data/ZoneAmmassamento6.js"></script>
-<script src="data/Zoneaccoglienza7.js"></script>   
+ <script src="data/Zoneaccoglienza7.js"></script>   
 <script src="data/centroidiuto0.js"></script>   
 <script src="data/Areediattesapopolazione0.js"></script>
+<script src="data/RIAreerischioindustriale0.js"></script>
+<script src="data/HOspedali1.js"></script>
+<script src="data/ATAreediattesapopolazione2.js"></script>
+<script src="data/AMAreediammassamentosoccorsiColonnamobileVVF3.js"></script>
+<script src="data/AMAreediammassamentosoccorsi4.js"></script>
+<script src="data/ACAreediaccoglienzapopolazione5.js"></script>
 
     </head>
     <body>
@@ -124,7 +130,7 @@ Il dataset contiene il piano di emergenza della protezione civile.<br> I contenu
        <h2 class="sidebar-header">Glossario Protezione Civile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h2><br>
  <p class="lorem"><strong>Aree di emergenza:</strong><br>Aree destinate, in caso di emergenza, ad uso di protezione civile. Esse devono essere preventivamente individuate nella pianificazione di emergenza e possono essere di tre tipi:</p>  
 <p class="lorem"><img src="markers/manhole-jb6.png" title="Risorse" height="32" /> <img src="markers/am_vvf.png"  title="Soccorsi - Colonna mobile VV.F"height="32" /> <strong>Aree di ammassamento soccorritori e risorse:</strong><br>Luoghi, in zone sicure rispetto alle diverse tipologie di rischio, dove dovranno trovare sistemazione idonea i soccorritori e le risorse necessarie a garantire un razionale intervento nelle zone di emergenza. Tali aree dovranno essere facilmente raggiungibili attraverso percorsi sicuri, anche con mezzi di grandi dimensioni, e ubicate nelle vicinanze di risorse idriche, elettriche ed con possibilità di smaltimento delle acque reflue. Il periodo di permanenza in emergenza di tali aree è compreso tra poche settimane e qualche mese.</p>  
-<p class="lorem"><img src="markers/information.png" title="Aree di attesa della popolazione" height="26" /> <strong>Aree di attesa della popolazione:</strong><br> Sono i luoghi di prima accoglienza per la popolazione; possono essere utilizzate piazze, slarghi, parcheggi, spazi pubblici o privati non soggetti a rischio (frane, alluvioni, crollo di strutture attigue, etc.), raggiungibili attraverso un percorso sicuro. Il numero delle aree da scegliere è funzione della capacità ricettiva degli spazi disponibili e del numero degli abitanti. In tali aree la popolazione riceve le prime informazioni sull'evento e i primi generi di conforto. Le Aree di Attesa della popolazione saranno utilizzate per un periodo di tempo compreso tra poche ore e qualche giorno.</p> 
+<p class="lorem"><img src="markers/information.png" title="Aree di attesa della popolazione" height="32" /> <strong>Aree di attesa della popolazione:</strong><br> Sono i luoghi di prima accoglienza per la popolazione; possono essere utilizzate piazze, slarghi, parcheggi, spazi pubblici o privati non soggetti a rischio (frane, alluvioni, crollo di strutture attigue, etc.), raggiungibili attraverso un percorso sicuro. Il numero delle aree da scegliere è funzione della capacità ricettiva degli spazi disponibili e del numero degli abitanti. In tali aree la popolazione riceve le prime informazioni sull'evento e i primi generi di conforto. Le Aree di Attesa della popolazione saranno utilizzate per un periodo di tempo compreso tra poche ore e qualche giorno.</p> 
 <p class="lorem"><img src="markers/ac_01.png" title="Aree di accoglienza o di ricovero della popolazione" height="32" /><strong>Aree di accoglienza o di ricovero della popolazione:</strong><br>Sono luoghi, individuati in aree sicure rispetto alle diverse tipologie di rischio e poste nelle vicinanze di risorse idriche, elettriche e fognarie, in cui vengono installati i primi insediamenti abitativi per alloggiare la popolazione colpita. Dovranno essere facilmente raggiungibili anche da mezzi di grandi dimensioni per consentirne l’allestimento e la gestione. Rientrano nella definizione di aree di accoglienza o di ricovero anche le strutture ricettive (hotel, residence, camping, etc.).</p>
 <hr>
 <p class="lorem"><img src="markers/ri.png" title="Aree Rischio industriale:" height="32" /><strong>Aree Rischio industriale:</strong><br>La presenza sul territorio di stabilimenti industriali, che utilizzano o detengono sostanze chimiche per le loro attività produttive, espone la popolazione e l’ambiente circostante al rischio industriale. Un incidente industriale può, infatti, provocare danni alla popolazione e al territorio.<br>Gli effetti sulla salute umana in caso di esposizione a sostanze tossiche rilasciate nell’atmosfera durante l’incidente variano a seconda delle caratteristiche delle sostanze, della loro concentrazione, della durata d’esposizione e dalla dose assorbita.<br>Gli effetti sull’ambiente sono legati alla contaminazione del suolo, dell’acqua e dell’atmosfera da parte delle sostanze tossiche. Gli effetti sulle cose riguardano principalmente i danni alle strutture.
@@ -330,7 +336,10 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
     });
         bounds_group.addLayer(layer_Viabilit1);
         //map.addLayer(layer_Viabilit1);
-        function pop_ZonizzazioneAree2(feature, layer) {
+		
+		<!-- Zonizzazione -->
+		
+        function pop_RIAreerischioindustriale0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Id:</th>\
@@ -348,84 +357,21 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
                         <th scope="row">Tipo:</th>\
                         <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
                     </tr>\
-                     <tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">Descrizione:</th>\
-                        <td>' + (feature.properties['descrizione'] !== null ? Autolinker.link(String(feature.properties['descrizione'])) : '') + '</td>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent);
         }
 
-        function style_ZonizzazioneAree2(feature) {
-            switch(feature.properties['Tipo']) {
-                case 'AC':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.75)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(255,0,0,0.75)',
-            }
-                    break;
-                case 'AM':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.75)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(253,191,111,0.75)',
-            }
-                    break;
-                case 'AM VV.F.':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
-                opacity: 1,
-                color: 'rgba(215,25,28,0.75)',
-                dashArray: '10,5',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0, 
-                fillOpacity: 1,
-                fillColor: 'rgba(251,245,57,0.75)',
-            }
-                    break;
-                case 'AT':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.75)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(53,166,45,0.75)',
-            }
-                    break;
-                case 'H':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.75)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(221,101,251,0.75)',
-            }
-                    break;
-                case 'RI':
-                    return {
-                pane: 'pane_ZonizzazioneAree2',
+        function style_RIAreerischioindustriale0() {
+            return {
+                pane: 'pane_RIAreerischioindustriale0',
                 opacity: 1,
                 color: 'rgba(215,25,28,1.0)',
                 dashArray: '10,5',
@@ -435,20 +381,289 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
                 fillOpacity: 1,
                 fillColor: 'rgba(224,209,134,0.0)',
             }
-                    break;
+        }
+        map.createPane('pane_RIAreerischioindustriale0');
+        map.getPane('pane_RIAreerischioindustriale0').style.zIndex = 400;
+        map.getPane('pane_RIAreerischioindustriale0').style['mix-blend-mode'] = 'normal';
+    var layer_RIAreerischioindustriale0 = new L.geoJson(json_RIAreerischioindustriale0, {
+        attribution: '<a href=""></a>',
+        pane: 'pane_RIAreerischioindustriale0',
+        onEachFeature: pop_RIAreerischioindustriale0,
+        style: style_RIAreerischioindustriale0
+    });
+        bounds_group.addLayer(layer_RIAreerischioindustriale0);
+        map.addLayer(layer_RIAreerischioindustriale0);
+        function pop_HOspedali1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Id:</th>\
+                        <td>' + (feature.properties['Id'] !== null ? Autolinker.link(String(feature.properties['Id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_HOspedali1() {
+            return {
+                pane: 'pane_HOspedali1',
+                opacity: 1,
+                color: 'rgba(0,0,0,0.75)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fillOpacity: 1,
+                fillColor: 'rgba(221,101,251,0.75)',
             }
         }
-        map.createPane('pane_ZonizzazioneAree2');
-        map.getPane('pane_ZonizzazioneAree2').style.zIndex = 402;
-        map.getPane('pane_ZonizzazioneAree2').style['mix-blend-mode'] = 'normal';
-    var layer_ZonizzazioneAree2 = new L.geoJson(json_ZonizzazioneAree2, {
+        map.createPane('pane_HOspedali1');
+        map.getPane('pane_HOspedali1').style.zIndex = 401;
+        map.getPane('pane_HOspedali1').style['mix-blend-mode'] = 'normal';
+    var layer_HOspedali1 = new L.geoJson(json_HOspedali1, {
         attribution: '<a href=""></a>',
-        pane: 'pane_ZonizzazioneAree2',
-        onEachFeature: pop_ZonizzazioneAree2,
-        style: style_ZonizzazioneAree2
+        pane: 'pane_HOspedali1',
+        onEachFeature: pop_HOspedali1,
+        style: style_HOspedali1
     });
-        bounds_group.addLayer(layer_ZonizzazioneAree2);
-        map.addLayer(layer_ZonizzazioneAree2);
+        bounds_group.addLayer(layer_HOspedali1);
+        map.addLayer(layer_HOspedali1);
+        function pop_ATAreediattesapopolazione2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Id:</th>\
+                        <td>' + (feature.properties['Id'] !== null ? Autolinker.link(String(feature.properties['Id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_ATAreediattesapopolazione2() {
+            return {
+                pane: 'pane_ATAreediattesapopolazione2',
+                opacity: 1,
+                color: 'rgba(0,0,0,0.75)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fillOpacity: 1,
+                fillColor: 'rgba(53,166,45,0.75)',
+            }
+        }
+        map.createPane('pane_ATAreediattesapopolazione2');
+        map.getPane('pane_ATAreediattesapopolazione2').style.zIndex = 402;
+        map.getPane('pane_ATAreediattesapopolazione2').style['mix-blend-mode'] = 'normal';
+    var layer_ATAreediattesapopolazione2 = new L.geoJson(json_ATAreediattesapopolazione2, {
+        attribution: '<a href=""></a>',
+        pane: 'pane_ATAreediattesapopolazione2',
+        onEachFeature: pop_ATAreediattesapopolazione2,
+        style: style_ATAreediattesapopolazione2
+    });
+        bounds_group.addLayer(layer_ATAreediattesapopolazione2);
+        map.addLayer(layer_ATAreediattesapopolazione2);
+        function pop_AMAreediammassamentosoccorsiColonnamobileVVF3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Id:</th>\
+                        <td>' + (feature.properties['Id'] !== null ? Autolinker.link(String(feature.properties['Id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_AMAreediammassamentosoccorsiColonnamobileVVF3() {
+            return {
+                pane: 'pane_AMAreediammassamentosoccorsiColonnamobileVVF3',
+                opacity: 1,
+                color: 'rgba(215,25,28,0.75)',
+                dashArray: '10,5',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0, 
+                fillOpacity: 1,
+                fillColor: 'rgba(251,245,57,0.75)',
+            }
+        }
+        map.createPane('pane_AMAreediammassamentosoccorsiColonnamobileVVF3');
+        map.getPane('pane_AMAreediammassamentosoccorsiColonnamobileVVF3').style.zIndex = 403;
+        map.getPane('pane_AMAreediammassamentosoccorsiColonnamobileVVF3').style['mix-blend-mode'] = 'normal';
+    var layer_AMAreediammassamentosoccorsiColonnamobileVVF3 = new L.geoJson(json_AMAreediammassamentosoccorsiColonnamobileVVF3, {
+        attribution: '<a href=""></a>',
+        pane: 'pane_AMAreediammassamentosoccorsiColonnamobileVVF3',
+        onEachFeature: pop_AMAreediammassamentosoccorsiColonnamobileVVF3,
+        style: style_AMAreediammassamentosoccorsiColonnamobileVVF3
+    });
+        bounds_group.addLayer(layer_AMAreediammassamentosoccorsiColonnamobileVVF3);
+        map.addLayer(layer_AMAreediammassamentosoccorsiColonnamobileVVF3);
+        function pop_AMAreediammassamentosoccorsi4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Id:</th>\
+                        <td>' + (feature.properties['Id'] !== null ? Autolinker.link(String(feature.properties['Id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_AMAreediammassamentosoccorsi4() {
+            return {
+                pane: 'pane_AMAreediammassamentosoccorsi4',
+                opacity: 1,
+                color: 'rgba(0,0,0,0.75)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fillOpacity: 1,
+                fillColor: 'rgba(253,191,111,0.75)',
+            }
+        }
+        map.createPane('pane_AMAreediammassamentosoccorsi4');
+        map.getPane('pane_AMAreediammassamentosoccorsi4').style.zIndex = 404;
+        map.getPane('pane_AMAreediammassamentosoccorsi4').style['mix-blend-mode'] = 'normal';
+    var layer_AMAreediammassamentosoccorsi4 = new L.geoJson(json_AMAreediammassamentosoccorsi4, {
+        attribution: '<a href=""></a>',
+        pane: 'pane_AMAreediammassamentosoccorsi4',
+        onEachFeature: pop_AMAreediammassamentosoccorsi4,
+        style: style_AMAreediammassamentosoccorsi4
+    });
+        bounds_group.addLayer(layer_AMAreediammassamentosoccorsi4);
+        map.addLayer(layer_AMAreediammassamentosoccorsi4);
+        function pop_ACAreediaccoglienzapopolazione5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Id:</th>\
+                        <td>' + (feature.properties['Id'] !== null ? Autolinker.link(String(feature.properties['Id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Simbolo:</th>\
+                        <td>' + (feature.properties['Simbolo'] !== null ? Autolinker.link(String(feature.properties['Simbolo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_ACAreediaccoglienzapopolazione5() {
+            return {
+                pane: 'pane_ACAreediaccoglienzapopolazione5',
+                opacity: 1,
+                color: 'rgba(0,0,0,0.75)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,0,0.75)',
+            }
+        }
+        map.createPane('pane_ACAreediaccoglienzapopolazione5');
+        map.getPane('pane_ACAreediaccoglienzapopolazione5').style.zIndex = 405;
+        map.getPane('pane_ACAreediaccoglienzapopolazione5').style['mix-blend-mode'] = 'normal';
+    var layer_ACAreediaccoglienzapopolazione5 = new L.geoJson(json_ACAreediaccoglienzapopolazione5, {
+        attribution: '<a href=""></a>',
+        pane: 'pane_ACAreediaccoglienzapopolazione5',
+        onEachFeature: pop_ACAreediaccoglienzapopolazione5,
+        style: style_ACAreediaccoglienzapopolazione5
+    });
+        bounds_group.addLayer(layer_ACAreediaccoglienzapopolazione5);
+        map.addLayer(layer_ACAreediaccoglienzapopolazione5);
+			
         function pop_Areerischioindustriale3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -995,13 +1210,23 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         //map.addLayer(layer_centroidiuto0);
         var baseMaps = {};
         L.control.layers(baseMaps,{
-'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">	AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,
+'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table> <hr> <span class="legenda">Localizzazione - Aree</span>': layer_Viabilit1,			
+			
+'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,
 '<img src="markers/manhole-jb6.png" height="32" /><span class="legenda1">AM - Aree di ammassamento soccorsi</span>': layer_ZoneAmmassamento6,
 '<img src="markers/am_vvf.png" height="32" /><span class="legenda1"> AM - Colonna mobile VV.F </span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,
 '<img src="markers/information.png "height="32" /><span class="legenda1">AT - Aree di attesa popolazione</span>': layer_Areediattesapopolazione0,
 '<img src="markers/hospital.png" height="32" /><span class="legenda1">H Ospedali</span>': layer_Areeospedale4,
-'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr>': layer_Areerischioindustriale3,
-'<span class="legenda">Zonizzazione Aree</span><br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td><span class="legenda1">AC - Aree di accoglienza popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td><span class="legenda1">AM - Aree di ammassamento soccorsi</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td><span class="legenda1">AM - Colonna mobile VV.F</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td><span class="legenda1">AT - Aree di attesa popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td><span class="legenda1">H Ospedali</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td><span class="legenda1">RI - Aree rischio industriale</span> </td></tr></table><hr>': layer_ZonizzazioneAree2,'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,'<img src="markers/a2.png" height="26" /><span class="legenda1"> Denominazione U.T.O.</span>': layer_centroidiuto0,}).addTo(map);
+'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr> <span class="legenda">Zonizzazione - Aree</span>': layer_Areerischioindustriale3,
+
+'<img src="legend/ACAreediaccoglienzapopolazione5.png" /><span class="legenda1"> AC - Aree di accoglienza popolazione</span>': layer_ACAreediaccoglienzapopolazione5,
+'<img src="legend/AMAreediammassamentosoccorsi4.png" /><span class="legenda1"> AM - Aree di ammassamento soccorsi</span>': layer_AMAreediammassamentosoccorsi4,
+'<img src="legend/AMAreediammassamentosoccorsiColonnamobileVVF3.png" /><span class="legenda1"> AM - Aree di ammassamento soccorsi - Colonna mobile VV.F</span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF3,
+'<img src="legend/ATAreediattesapopolazione2.png" /><span class="legenda1"> AT - Aree di attesa popolazione</span>': layer_ATAreediattesapopolazione2,
+'<img src="legend/HOspedali1.png" /><span class="legenda1"> H - Ospedali</span>': layer_HOspedali1,
+'<img src="legend/RIAreerischioindustriale0.png" /><span class="legenda1"> RI - Aree rischio industriale</span> <hr>': layer_RIAreerischioindustriale0,
+
+'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,'<img src="markers/a2.png" height="26" /><span class="legenda1"> Denominazione U.T.O.</span>': layer_centroidiuto0,}).addTo(map);
         setBounds();
 		<!-- strumenti di leaflet -->
 		
