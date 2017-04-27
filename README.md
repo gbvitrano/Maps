@@ -19,6 +19,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="http://github.gbvitrano.it/ppc/index.html"><img width="1000" src="http://github.gbvitrano.it/ppc/lib/images/ppc.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Palermo, Piano Comunale di emergenza Protezione Civile, su base opendata." /></a>
+
+[**Palermo, Piano Comunale di emergenza Protezione Civile**](http://github.gbvitrano.it/ppc/index.html)
 
 <a href="http://github.gbvitrano.it/atlante_palermo/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_palermo/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
