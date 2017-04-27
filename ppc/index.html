@@ -56,15 +56,17 @@
 <script src="lib/js/print/leaflet.easyPrint.js"></script>
 
         <!-- script dati mappa -->
-        <script src="data/UnitTerritorialeOmogenea0.js"></script>
-        <script src="data/Viabilit1.js"></script>
-        <script src="data/ZonizzazioneAree2.js"></script>
-        <script src="data/Areerischioindustriale3.js"></script>
-        <script src="data/Areeospedale4.js"></script>
-        <script src="data/AMAreediammassamentosoccorsiColonnamobileVVF5.js"></script>
-        <script src="data/ZoneAmmassamento6.js"></script>
-        <script src="data/Zoneaccoglienza7.js"></script>   
-        <script src="data/centroidiuto0.js"></script>   
+ <script src="data/UnitTerritorialeOmogenea0.js"></script>
+<script src="data/Viabilit1.js"></script>
+<script src="data/ZonizzazioneAree2.js"></script>
+<script src="data/Areerischioindustriale3.js"></script>
+<script src="data/Areeospedale4.js"></script>
+<script src="data/AMAreediammassamentosoccorsiColonnamobileVVF5.js"></script>
+<script src="data/ZoneAmmassamento6.js"></script>
+<script src="data/Zoneaccoglienza7.js"></script>   
+<script src="data/centroidiuto0.js"></script>   
+<script src="data/Areediattesapopolazione0.js"></script>
+
     </head>
     <body>
  <div id="sidebar" class="sidebar collapsed">
@@ -122,7 +124,7 @@ Il dataset contiene il piano di emergenza della protezione civile.<br> I contenu
        <h2 class="sidebar-header">Glossario Protezione Civile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h2><br>
  <p class="lorem"><strong>Aree di emergenza:</strong><br>Aree destinate, in caso di emergenza, ad uso di protezione civile. Esse devono essere preventivamente individuate nella pianificazione di emergenza e possono essere di tre tipi:</p>  
 <p class="lorem"><img src="markers/manhole-jb6.png" title="Risorse" height="32" /> <img src="markers/am_vvf.png"  title="Soccorsi - Colonna mobile VV.F"height="32" /> <strong>Aree di ammassamento soccorritori e risorse:</strong><br>Luoghi, in zone sicure rispetto alle diverse tipologie di rischio, dove dovranno trovare sistemazione idonea i soccorritori e le risorse necessarie a garantire un razionale intervento nelle zone di emergenza. Tali aree dovranno essere facilmente raggiungibili attraverso percorsi sicuri, anche con mezzi di grandi dimensioni, e ubicate nelle vicinanze di risorse idriche, elettriche ed con possibilità di smaltimento delle acque reflue. Il periodo di permanenza in emergenza di tali aree è compreso tra poche settimane e qualche mese.</p>  
-<p class="lorem"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" title="Aree di attesa della popolazione" height="26" /> <strong>Aree di attesa della popolazione:</strong><br> Sono i luoghi di prima accoglienza per la popolazione; possono essere utilizzate piazze, slarghi, parcheggi, spazi pubblici o privati non soggetti a rischio (frane, alluvioni, crollo di strutture attigue, etc.), raggiungibili attraverso un percorso sicuro. Il numero delle aree da scegliere è funzione della capacità ricettiva degli spazi disponibili e del numero degli abitanti. In tali aree la popolazione riceve le prime informazioni sull'evento e i primi generi di conforto. Le Aree di Attesa della popolazione saranno utilizzate per un periodo di tempo compreso tra poche ore e qualche giorno.</p> 
+<p class="lorem"><img src="markers/information.png" title="Aree di attesa della popolazione" height="26" /> <strong>Aree di attesa della popolazione:</strong><br> Sono i luoghi di prima accoglienza per la popolazione; possono essere utilizzate piazze, slarghi, parcheggi, spazi pubblici o privati non soggetti a rischio (frane, alluvioni, crollo di strutture attigue, etc.), raggiungibili attraverso un percorso sicuro. Il numero delle aree da scegliere è funzione della capacità ricettiva degli spazi disponibili e del numero degli abitanti. In tali aree la popolazione riceve le prime informazioni sull'evento e i primi generi di conforto. Le Aree di Attesa della popolazione saranno utilizzate per un periodo di tempo compreso tra poche ore e qualche giorno.</p> 
 <p class="lorem"><img src="markers/ac_01.png" title="Aree di accoglienza o di ricovero della popolazione" height="32" /><strong>Aree di accoglienza o di ricovero della popolazione:</strong><br>Sono luoghi, individuati in aree sicure rispetto alle diverse tipologie di rischio e poste nelle vicinanze di risorse idriche, elettriche e fognarie, in cui vengono installati i primi insediamenti abitativi per alloggiare la popolazione colpita. Dovranno essere facilmente raggiungibili anche da mezzi di grandi dimensioni per consentirne l’allestimento e la gestione. Rientrano nella definizione di aree di accoglienza o di ricovero anche le strutture ricettive (hotel, residence, camping, etc.).</p>
 <hr>
 <p class="lorem"><img src="markers/ri.png" title="Aree Rischio industriale:" height="32" /><strong>Aree Rischio industriale:</strong><br>La presenza sul territorio di stabilimenti industriali, che utilizzano o detengono sostanze chimiche per le loro attività produttive, espone la popolazione e l’ambiente circostante al rischio industriale. Un incidente industriale può, infatti, provocare danni alla popolazione e al territorio.<br>Gli effetti sulla salute umana in caso di esposizione a sostanze tossiche rilasciate nell’atmosfera durante l’incidente variano a seconda delle caratteristiche delle sostanze, della loro concentrazione, della durata d’esposizione e dalla dose assorbita.<br>Gli effetti sull’ambiente sono legati alla contaminazione del suolo, dell’acqua e dell’atmosfera da parte delle sostanze tossiche. Gli effetti sulle cose riguardano principalmente i danni alle strutture.
@@ -254,6 +256,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
     });
         bounds_group.addLayer(layer_UnitTerritorialeOmogenea0);
         map.addLayer(layer_UnitTerritorialeOmogenea0);
+				
         function pop_Viabilit1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -747,6 +750,60 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         bounds_group.addLayer(layer_Zoneaccoglienza7);
         map.addLayer(layer_Zoneaccoglienza7);
 		
+		function pop_Areediattesapopolazione0(feature, layer) {
+            var popupContent = '<table>\
+			                   <tr>\
+                        <th scope="row">Descrizione:</th>\
+                        <td>' + (feature.properties['descrizion'] !== null ? Autolinker.link(String(feature.properties['descrizion'])) : '') + '</td>\
+                    </tr>\
+                                    <tr>\
+                        <th scope="row">Note:</th>\
+                        <td>' + (feature.properties['Note'] !== null ? Autolinker.link(String(feature.properties['Note'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Numero:</th>\
+                        <td>' + (feature.properties['Numero'] !== null ? Autolinker.link(String(feature.properties['Numero'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tipo:</th>\
+                        <td>' + (feature.properties['Tipo'] !== null ? Autolinker.link(String(feature.properties['Tipo'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function style_Areediattesapopolazione0() {
+            return {
+                pane: 'pane_Areediattesapopolazione0',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/information.png',
+           iconSize: [32.0, 37.0]
+
+        }),
+            }
+        }
+        map.createPane('pane_Areediattesapopolazione0');
+        map.getPane('pane_Areediattesapopolazione0').style.zIndex = 406;
+        map.getPane('pane_Areediattesapopolazione0').style['mix-blend-mode'] = 'normal';
+        var layer_Areediattesapopolazione0 = new L.geoJson(json_Areediattesapopolazione0, {
+            attribution: '<a href=""></a>',
+            pane: 'pane_Areediattesapopolazione0',
+            onEachFeature: pop_Areediattesapopolazione0,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_Areediattesapopolazione0(feature))
+            }
+        });
+        var cluster_Areediattesapopolazione0 = new L.MarkerClusterGroup({showCoverageOnHover: false});
+        cluster_Areediattesapopolazione0.addLayer(layer_Areediattesapopolazione0);		
+        bounds_group.addLayer(layer_Areediattesapopolazione0);
+		cluster_Areediattesapopolazione0.addTo(map);
+		//map.addLayer(layer_Areediattesapopolazione0);
 			
         function pop_centroidiuto0(feature, layer) {
             var popupContent = '<table>\
@@ -937,7 +994,14 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         bounds_group.addLayer(layer_centroidiuto0);
         //map.addLayer(layer_centroidiuto0);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">	AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,'<img src="markers/manhole-jb6.png" height="32" /><span class="legenda1">AM - Aree di ammassamento soccorsi</span>': layer_ZoneAmmassamento6,'<img src="markers/am_vvf.png" height="32" /><span class="legenda1"> AM - Colonna mobile VV.F </span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,'<img src="markers/hospital.png" height="32" /><span class="legenda1">H Ospedali</span>': layer_Areeospedale4,'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr>': layer_Areerischioindustriale3,'<span class="legenda">Zonizzazione Aree</span><br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td><span class="legenda1">AC - Aree di accoglienza popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td><span class="legenda1">AM - Aree di ammassamento soccorsi</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td><span class="legenda1">AM - Colonna mobile VV.F</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td><span class="legenda1">AT - Aree di attesa popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td><span class="legenda1">H Ospedali</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td><span class="legenda1">RI - Aree rischio industriale</span> </td></tr></table><hr>': layer_ZonizzazioneAree2,'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,'<img src="markers/a2.png" height="26" /><span class="legenda1"> Denominazione U.T.O.</span>': layer_centroidiuto0,}).addTo(map);
+        L.control.layers(baseMaps,{
+'<img src="markers/ac_01.png"  height="32" /><span class="legenda1">	AC - Aree di accoglienza popolazione</span>': layer_Zoneaccoglienza7,
+'<img src="markers/manhole-jb6.png" height="32" /><span class="legenda1">AM - Aree di ammassamento soccorsi</span>': layer_ZoneAmmassamento6,
+'<img src="markers/am_vvf.png" height="32" /><span class="legenda1"> AM - Colonna mobile VV.F </span>': layer_AMAreediammassamentosoccorsiColonnamobileVVF5,
+'<img src="markers/information.png "height="32" /><span class="legenda1">AT - Aree di attesa popolazione</span>': layer_Areediattesapopolazione0,
+'<img src="markers/hospital.png" height="32" /><span class="legenda1">H Ospedali</span>': layer_Areeospedale4,
+'<img src="markers/ri.png" height="32"/><span class="legenda1">RI - Aree rischio industriale</span> <hr>': layer_Areerischioindustriale3,
+'<span class="legenda">Zonizzazione Aree</span><br /><table><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ACAreediaccoglienzapopolazione0.png" /></td><td><span class="legenda1">AC - Aree di accoglienza popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsi1.png" /></td><td><span class="legenda1">AM - Aree di ammassamento soccorsi</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_AMAreediammassamentosoccorsiColonnamobileVVF2.png" /></td><td><span class="legenda1">AM - Colonna mobile VV.F</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_ATAreediattesapopolazione3.png" /></td><td><span class="legenda1">AT - Aree di attesa popolazione</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_HOspedali4.png" /></td><td><span class="legenda1">H Ospedali</span></td></tr><tr><td style="text-align: center;"><img src="legend/ZonizzazioneAree2_RIAreerischioindustriale5.png" /></td><td><span class="legenda1">RI - Aree rischio industriale</span> </td></tr></table><hr>': layer_ZonizzazioneAree2,'<span class="legenda">Viabilità</span><br /><table><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitprincipale0.png" /></td><td><span class="legenda1">Viabilità principale</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitsecondaria1.png" /></td><td><span class="legenda1">Viabilità secondaria</span></td></tr><tr><td style="text-align: center;"><img src="legend/Viabilit1_Viabilitterziaria2.png" /></td><td><span class="legenda1">Viabilità terziaria</span></td></tr></table><hr>': layer_Viabilit1,'<img src="legend/UnitTerritorialeOmogenea0.png" /><span class="legenda"> Unità Territoriale Omogenea</span>': layer_UnitTerritorialeOmogenea0,'<img src="markers/a2.png" height="26" /><span class="legenda1"> Denominazione U.T.O.</span>': layer_centroidiuto0,}).addTo(map);
         setBounds();
 		<!-- strumenti di leaflet -->
 		
