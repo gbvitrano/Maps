@@ -1,15 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
     <head>
-     <title>Piano di emergenza Protezione Civile - Palermo</title>
+ <title>Palermo - Piano di emergenza Protezione Civile</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Piano di emergenza Protezione Civile - Palermo su base opendata">
+        <meta name="keywords" content="Open Data Sicilia, protezione civile, piano emergenza, palermo,">
+        <meta name="author" content="Giovan Battista Vitrano per OpenDataSicilia.it">
+        <meta http-equiv="content-language" content="IT">
+        <meta name="robots" content="index,follow">
+        <meta name="creation_Date" content="27/04/2017">
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="shortcut icon" href="favicon.ico"/> 
         <link rel="icon" href="favicon.png" type="image/png"/> 
-         <!-- css -->
+        
+ <!-- Open Graph Protocol -->
+<meta property="og:title" content="Piano di emergenza Protezione Civile - Palermo" />
+<meta property="og:description" content="Palermo, Piano Comunale di emergenza Protezione Civile, su base opendata." />
+<meta property="og:url" content="http://github.gbvitrano.it/ppc/index.html" />
+<meta property="article:author" content="Giovan Battista Vitrano per Open Data Sicilia" />
+<meta property="og:image" content="http://github.gbvitrano.it/ppc/lib/images/ppc.jpg" />
+<meta property="og:site_name" content="coseerobe.gbvitrano.it" />
+<!-- Open Graph Protocol -->
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Piano di emergenza Protezione Civile - Palermo">
+<meta name="twitter:description" content="Palermo, Piano Comunale di emergenza Protezione Civile, su base opendata.">
+<meta name="twitter:image" content="http://github.gbvitrano.it/ppc/lib/images/ppc.jpg">
+<meta name="twitter:creator" content="@gbvitrano Giovan Battista Vitrano per Open Data Sicilia">
+<meta name="twitter:site" content="coseerobe.gbvitrano.it" />
+<meta name="twitter:url" content="http://coseerobe.gbvitrano.it">
+<!-- twitter -->       
+
+ <!-- css -->
 <link href="lib/css/atlante_01.css" rel="stylesheet" type="text/css">
 <link href="lib/css/leaflet.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -848,7 +874,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
                         <td>' + (feature.properties['Descrizione'] !== null ? Autolinker.link(String(feature.properties['Descrizione'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">M2</th>\
+                        <th scope="row">Mq:</th>\
                         <td>' + (feature.properties['M2'] !== null ? Autolinker.link(String(feature.properties['M2'])) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -913,7 +939,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
                         <td>' + (feature.properties['Descrizione'] !== null ? Autolinker.link(String(feature.properties['Descrizione'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">M2</th>\
+                        <th scope="row">Mq:</th>\
                         <td>' + (feature.properties['M2'] !== null ? Autolinker.link(String(feature.properties['M2'])) : '') + '</td>\
                     </tr>\
                     <tr>\
