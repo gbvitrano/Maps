@@ -13,11 +13,11 @@
 <link href="lib/css/atlante_01.css" rel="stylesheet" type="text/css">
 <link href="lib/css/leaflet.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/L.Control.Locate.min.css" />
-<link rel="stylesheet" type="text/css" href="css/qgis2web.css">
-<link rel="stylesheet" href="css/MarkerCluster.css" />
-<link rel="stylesheet" href="css/MarkerCluster.Default.css" />
-<link rel="stylesheet" href="css/leaflet-measure.css" />
+<link rel="stylesheet" href="lib/css/L.Control.Locate.min.css" />
+<link rel="stylesheet" type="text/css" href="lib/css/qgis2web.css">
+<link rel="stylesheet" href="lib/css/MarkerCluster.css" />
+<link rel="stylesheet" href="lib/css/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="lib/css/leaflet-measure.css" />
 <link href="lib/css/L.Control.Basemaps.css" rel="stylesheet" type="text/css">
 <link href="lib/css/LControlMousePosition.css" rel="stylesheet" type="text/css">
 <link href="lib/css/scalebar.css" rel="stylesheet" type="text/css">
@@ -326,7 +326,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
         style: style_Viabilit1
     });
         bounds_group.addLayer(layer_Viabilit1);
-        map.addLayer(layer_Viabilit1);
+        //map.addLayer(layer_Viabilit1);
         function pop_ZonizzazioneAree2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
