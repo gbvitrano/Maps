@@ -1,6 +1,9 @@
 # Piano di emergenza Protezione Civile - Palermo
 
-Rielaborazione dataset [Mappa in progress...](http://github.gbvitrano.it/ppc/)
+<a href="http://github.gbvitrano.it/ppc/index.html"><img width="1000" src="http://github.gbvitrano.it/ppc/lib/images/ppc.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Palermo, Piano Comunale di emergenza Protezione Civile, su base opendata." /></a>
+
+
+Rielaborazione dataset [Mappa](http://github.gbvitrano.it/ppc/)
 
 Dataset: [Comune di Palermo - Piano di emergenza Protezione Civile - Palermo](https://www.comune.palermo.it/opendata_dld.php?id=351) 
 
