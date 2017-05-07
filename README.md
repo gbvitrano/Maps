@@ -21,7 +21,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="http://github.gbvitrano.it/rimozione_amianto/index.html"><img width="1000" src="http://github.gbvitrano.it/rimozione_amianto/legend/mappa_rim_ami.jpg" Title=" Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." alt="Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." /></a>
 
-[**Palermo - Rimozione di cemento amianto negli spazi pubblici comunali**](http://github.gbvitrano.it/rimozione_amianto/index.html)
+[**Palermo - Rimozione di cemento amianto negli spazi pubblici comunali**](http://github.gbvitrano.it/rimozione_amianto/index.html), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_menus.php?sel=1) 
 
 <a href="http://github.gbvitrano.it/ppc/index.html"><img width="1000" src="http://github.gbvitrano.it/ppc/lib/images/ppc.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Palermo, Piano Comunale di emergenza Protezione Civile, su base opendata." /></a>
 
@@ -31,9 +31,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 [**Atlante delle cartografie tecniche storiche di Palermo - (beta version 2.0)**](http://github.gbvitrano.it/atlante_palermo/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
-<a href="http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html"><img width="1000" src="http://egdisegno.studiovitrano.it/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
+<a href="http://gbvitrano.it/qgis/variante_generale/cambia-menti.html"><img width="1000" src="http://gbvitrano.it/qgis/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
 
-- [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](http://egdisegno.studiovitrano.it/variante_generale/prg_2015.html)<br> elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
+- [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](http://gbvitrano.it/qgis/variante_generale/cambia-menti.html)<br> elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
 <a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
