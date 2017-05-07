@@ -22,7 +22,7 @@
 <meta property="og:description" content="Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." />
 <meta property="og:url" content="http://github.gbvitrano.it/rimozione_amianto/index.html" />
 <meta property="article:author" content="Giovan Battista Vitrano per Open Data Sicilia" />
-<meta property="og:image" content="http://github.gbvitrano.it/rimozione_amianto/legend/mappa_rim_ami.jpg" />
+<meta property="og:image" content="http://github.gbvitrano.it/rimozione_amianto/2015/legend/mappa_rim_ami.jpg" />
 <meta property="og:site_name" content="coseerobe.gbvitrano.it" />
 <!-- Open Graph Protocol -->
 
@@ -30,7 +30,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Rimozione di cemento amianto negli spazi pubblici comunali">
 <meta name="twitter:description" content="Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata.">
-<meta name="twitter:image" content="http://github.gbvitrano.it/rimozione_amianto/legend/mappa_rim_ami.jpg">
+<meta name="twitter:image" content="http://github.gbvitrano.it/rimozione_amianto/2015/legend/mappa_rim_ami.jpg">
 <meta name="twitter:creator" content="@gbvitrano Giovan Battista Vitrano per Open Data Sicilia">
 <meta name="twitter:site" content="coseerobe.gbvitrano.it" />
 <meta name="twitter:url" content="http://coseerobe.gbvitrano.it">
@@ -80,7 +80,7 @@
 <script src="lib/js/print/leaflet.easyPrint.js"></script>
 
         <!-- script dati mappa -->
-<script src="2016/data/Rimozioneaminato20160.js"></script>
+<script src="2015/data/Rimozioneaminato20150.js"></script>
 
     </head>
     <body>
@@ -210,7 +210,7 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
         });
         var map = L.map('map', { zoomControl:false,  maxZoom:17, minZoom:12  }).fitBounds([[38.0456249463,13.1585982262],[38.2289798058,13.5367244669]]);
         var hash = new L.Hash(map);
-        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> - Rielaborazione dataset <a href="https://www.comune.palermo.it/opendata_dld.php?id=543" target="_blank" title="Rimozione cemento aminato 2016">Rimozione cemento aminato 2016</a> di: <a href="https://twitter.com/opendatasicilia" target="_blank" title="opendatasicilia">@opendatasicilia</a>');
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> - Rielaborazione dataset <a href="https://www.comune.palermo.it/opendata_dld.php?id=385" target="_blank" title="Rimozione cemento aminato 2015">Rimozione cemento aminato 2015</a> di: <a href="https://twitter.com/opendatasicilia" target="_blank" title="opendatasicilia">@opendatasicilia</a>');
         var bounds_group = new L.featureGroup([]);
         var basemap0 = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
             attribution:'Map tiles by <a target="_blank" href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. map data &#9400; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap contributors</a> under ODbL',
@@ -228,7 +228,7 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
             ];
           });
         }
-        function pop_Rimozioneaminato20160(feature, layer) {
+        function pop_Rimozioneaminato20150(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Quartiere:</th>\
@@ -244,11 +244,11 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                     </tr>\
                     <tr>\
                         <th scope="row">Rimozione anno 2015 (Kg):</th>\
-                        <td>' + (feature.properties['2015'] !== null ? Autolinker.link(String(feature.properties['2015'])) : '') + '</td>\
+                        <td>' + (feature.properties['2015'] !== null ? Autolinker.link(String(feature.properties['2015'])) : '') + ' (Anno di riferimento)</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Rimozione anno 2016 (Kg):</th>\
-                        <td>' + (feature.properties['2016_1'] !== null ? Autolinker.link(String(feature.properties['2016_1'])) : '') +  ' (Anno di riferimento)</td>\
+                        <td>' + (feature.properties['2016_1'] !== null ? Autolinker.link(String(feature.properties['2016_1'])) : '') +  ' </td>\
                     </tr>\
                     <tr>\
                         <th scope="row"><hr></th>\
@@ -262,11 +262,11 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
             layer.bindPopup(popupContent);
         }
 
-        function style_Rimozioneaminato20160(feature) {
-            switch(feature.properties['2016_1']) {
-                case '61886':
+function style_Rimozioneaminato20150(feature) {
+            switch(feature.properties['2015']) {
+                case '56317':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -277,9 +277,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(215,48,39,0.75)',
             }
                     break;
-                case '19599':
+                case '17120':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -290,9 +290,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(215,48,39,0.75)',
             }
                     break;
-                case '13570':
+                case '12405':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -303,22 +303,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(215,48,39,0.75)',
             }
                     break;
-                case '9035':
+                case '8543':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
-                opacity: 1,
-                color: 'rgba(215,25,28,0.75)',
-                dashArray: '10,5',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(215,48,39,0.75)',
-            }
-                    break;
-                case '8819':
-                    return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -329,9 +316,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(252,141,89,0.75)',
             }
                     break;
-                case '8394':
+                case '7830':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -342,9 +329,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(252,141,89,0.75)',
             }
                     break;
-                case '6338':
+                case '5861':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -355,9 +342,22 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(252,141,89,0.75)',
             }
                     break;
-                case '5701':
+                case '5637':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
+                opacity: 1,
+                color: 'rgba(215,25,28,0.75)',
+                dashArray: '10,5',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1, 
+                fillOpacity: 1,
+                fillColor: 'rgba(252,141,89,0.75)',
+            }
+                    break;
+                case '3671':
+                    return {
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -368,9 +368,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(254,224,139,0.75)',
             }
                     break;
-                case '4902':
+                case '2647':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -381,9 +381,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(254,224,139,0.75)',
             }
                     break;
-                case '2432':
+                case '1717':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -394,22 +394,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(254,224,139,0.75)',
             }
                     break;
-                case '2308':
+                case '1448':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
-                opacity: 1,
-                color: 'rgba(215,25,28,0.75)',
-                dashArray: '10,5',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(254,224,139,0.75)',
-            }
-                    break;
-                case '1735':
-                    return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -420,9 +407,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(255,255,191,0.75)',
             }
                     break;
-                case '1542':
+                case '1320':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -433,9 +420,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(255,255,191,0.75)',
             }
                     break;
-                case '1433':
+                case '1276':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -446,9 +433,22 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(255,255,191,0.75)',
             }
                     break;
-                case '999':
+                case '1072':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
+                opacity: 1,
+                color: 'rgba(215,25,28,0.75)',
+                dashArray: '10,5',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1, 
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,191,0.75)',
+            }
+                    break;
+                case '978':
+                    return {
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -459,9 +459,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(217,239,139,0.75)',
             }
                     break;
-                case '713':
+                case '773':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -472,9 +472,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(217,239,139,0.75)',
             }
                     break;
-                case '675':
+                case '756':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -485,22 +485,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(217,239,139,0.75)',
             }
                     break;
-                case '659':
+                case '741':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
-                opacity: 1,
-                color: 'rgba(215,25,28,0.75)',
-                dashArray: '10,5',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1, 
-                fillOpacity: 1,
-                fillColor: 'rgba(217,239,139,0.75)',
-            }
-                    break;
-                case '371':
-                    return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -511,9 +498,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(145,207,96,0.75)',
             }
                     break;
-                case '356':
+                case '738':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -524,9 +511,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(145,207,96,0.75)',
             }
                     break;
-                case '315':
+                case '340':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -537,9 +524,22 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(145,207,96,0.75)',
             }
                     break;
-                case '244':
+                case '203':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
+                opacity: 1,
+                color: 'rgba(215,25,28,0.75)',
+                dashArray: '10,5',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1, 
+                fillOpacity: 1,
+                fillColor: 'rgba(145,207,96,0.75)',
+            }
+                    break;
+                case '180':
+                    return {
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -550,9 +550,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(26,152,80,0.75)',
             }
                     break;
-                case '233':
+                case '98':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -563,9 +563,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(26,152,80,0.75)',
             }
                     break;
-                case '160':
+                case '20':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -576,9 +576,9 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                 fillColor: 'rgba(26,152,80,0.75)',
             }
                     break;
-                case '44':
+                case '0':
                     return {
-                pane: 'pane_Rimozioneaminato20160',
+                pane: 'pane_Rimozioneaminato20150',
                 opacity: 1,
                 color: 'rgba(215,25,28,0.75)',
                 dashArray: '10,5',
@@ -591,19 +591,19 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
                     break;
             }
         }
-        map.createPane('pane_Rimozioneaminato20160');
-        map.getPane('pane_Rimozioneaminato20160').style.zIndex = 400;
-        map.getPane('pane_Rimozioneaminato20160').style['mix-blend-mode'] = 'normal';
-    var layer_Rimozioneaminato20160 = new L.geoJson(json_Rimozioneaminato20160, {
+        map.createPane('pane_Rimozioneaminato20150');
+        map.getPane('pane_Rimozioneaminato20150').style.zIndex = 400;
+        map.getPane('pane_Rimozioneaminato20150').style['mix-blend-mode'] = 'normal';
+    var layer_Rimozioneaminato20150 = new L.geoJson(json_Rimozioneaminato20150, {
         attribution: '<a href=""></a>',
-        pane: 'pane_Rimozioneaminato20160',
-        onEachFeature: pop_Rimozioneaminato20160,
-        style: style_Rimozioneaminato20160
+        pane: 'pane_Rimozioneaminato20150',
+        onEachFeature: pop_Rimozioneaminato20150,
+        style: style_Rimozioneaminato20150
     });
-        bounds_group.addLayer(layer_Rimozioneaminato20160);
-        map.addLayer(layer_Rimozioneaminato20160);
+        bounds_group.addLayer(layer_Rimozioneaminato20150);
+        map.addLayer(layer_Rimozioneaminato20150);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Rimozione aminato 2016<br /><table><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_61886kgSettecannoli0.png" /></td><td>61.886 kg - Settecannoli</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_19599kgPallavicino1.png" /></td><td>19.599 kg - Pallavicino</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_13570kgMontegrappaSRosalia2.png" /></td><td>13.570 kg - Montegrappa – S. Rosalia</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_9035kgBrancaccioCiaculli3.png" /></td><td>9.035 kg - Brancaccio – Ciaculli</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_8819kgResuttanaSLorenzo4.png" /></td><td>8.819 kg - Resuttana - S. Lorenzo</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_8394kgBorgoNuovo5.png" /></td><td>8.394 kg - Borgo Nuovo</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_6338kgUditorePassodiRigano6.png" /></td><td>6.338 kg - Uditore - Passo di Rigano</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_5701kgTommasoNataleSferracavallo7.png" /></td><td>5.701 kg - Tommaso Natale – Sferracavallo</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_4902kgCruillasCep8.png" /></td><td>4.902 kg - Cruillas - Cep</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_2432kgAltarello9.png" /></td><td>2.432 kg - Altarello</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_2308kgVillagraziaFalsomiele10.png" /></td><td>2.308 kg - Villagrazia – Falsomiele</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_1735kgOretoStazione11.png" /></td><td>1.735 kg - Oreto-Stazione</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_1542kgPalazzoRealeMontediPiet12.png" /></td><td>1.542 kg - Palazzo Reale - Monte di Pietà</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_1433kgMontePellegrino13.png" /></td><td>1.433 kg - Monte Pellegrino</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_999kgMezzomonrealeVillaTasca14.png" /></td><td>999 kg - Mezzomonreale – Villa Tasca</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_713kgPoliteama15.png" /></td><td>713 kg - Politeama</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_675kgZisa16.png" /></td><td>675 kg - Zisa</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_659kgPartannaMondello17.png" /></td><td>659 kg - Partanna Mondello</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_371kgNoce18.png" /></td><td>371 kg - Noce</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_356kgTribunaliCastellammare19.png" /></td><td>356 kg - Tribunali – Castellammare</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_315kgLibert20.png" /></td><td>315 kg - Libertà</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_244kgCubaCalatafimi21.png" /></td><td>244 kg - Cuba – Calatafimi</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_233kgArenellaVergineMaria22.png" /></td><td>233 kg - Arenella – Vergine Maria</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_160kgMalaspinaPalagonia23.png" /></td><td>160 kg - Malaspina – Palagonia</td></tr><tr><td style="text-align: center;"><img src="2016/legend/Rimozioneaminato20160_44kgBoccadifalco24.png" /></td><td>44 kg - Boccadifalco</td></tr></table>': layer_Rimozioneaminato20160,}).addTo(map);
+        L.control.layers(baseMaps,{'Rimozione aminato 2015<br /><table><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_56317kgBrancaccioCiaculli0.png" /></td><td>56.317 kg - Brancaccio – Ciaculli</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_17120kgPartannaMondello1.png" /></td><td>17.120 kg - Partanna Mondello</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_12405kgZisa2.png" /></td><td>12.405 kg - Zisa</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_8543kgPallavicino3.png" /></td><td>8.543 kg - Pallavicino</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_7830kgCruillasCep4.png" /></td><td>7.830 kg - Cruillas - Cep</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_5861kgMontegrappaSRosalia5.png" /></td><td>5.861 kg - Montegrappa – S. Rosalia</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_5637kgSettecannoli6.png" /></td><td>5.637 kg - Settecannoli</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_3671kgAltarello7.png" /></td><td>3.671 kg - Altarello</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_2647kgUditorePassodiRigano8.png" /></td><td>2.647 kg - Uditore - Passo di Rigano</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_1717kgOretoStazione9.png" /></td><td>1.717 kg - Oreto-Stazione</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_1448kgVillagraziaFalsomiele10.png" /></td><td>1.448 kg - Villagrazia – Falsomiele</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_1320kgNoce11.png" /></td><td>1.320 kg - Noce</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_1276kgPalazzoRealeMontediPiet12.png" /></td><td>1.276 kg - Palazzo Reale - Monte di Pietà</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_1072kgMezzomonrealeVillaTasca13.png" /></td><td>1.072 kg - Mezzomonreale – Villa Tasca</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_978kgMontePellegrino14.png" /></td><td>978 kg - Monte Pellegrino</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_773kgTommasoNataleSferracavallo15.png" /></td><td>773 kg - Tommaso Natale – Sferracavallo</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_BorgoNuovo16.png" /></td><td>Borgo Nuovo</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_741kgResuttanaSLorenzo17.png" /></td><td>741 kg - Resuttana - S. Lorenzo</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_738kgCubaCalatafimi18.png" /></td><td>738 kg - Cuba – Calatafimi</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_340kgPoliteama19.png" /></td><td>340 kg - Politeama</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_203kgMalaspinaPalagonia20.png" /></td><td>203 kg - Malaspina – Palagonia</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_180kgLibert21.png" /></td><td>180 kg - Libertà</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_98kgTribunaliCastellammare22.png" /></td><td>98 kg - Tribunali – Castellammare</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_20kgBoccadifalco23.png" /></td><td>20 kg - Boccadifalco</td></tr><tr><td style="text-align: center;"><img src="2015/legend/Rimozioneaminato20150_0kgArenellaVergineMaria24.png" /></td><td>0 kg - Arenella – Vergine Maria</td></tr></table>': layer_Rimozioneaminato20150,}).addTo(map);
         setBounds();
 				<!-- strumenti di leaflet -->
 		
@@ -626,8 +626,8 @@ I dataset  attribuiscono ad ogni quartiere della città di Palermo il dato relat
 <div id="bot" class="leaflet-control">
 <div id="logo"><a href="http://opendatasicilia.it/" target="_blank"><img src="lib/images/logo_ods_b.png" alt="" height="60" title="opendatasicilia.it"/></a>  </div>  
 <div id="titolo"> 
-  <h1>Palermo - Rimozione Aminato<br><a href="2010_13.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali negli anni 2010/13, Palermo" class="btn btn--s btn--gray-border" target="parent">2010/13</a>  <a href="2014.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2014, Palermo"  class="btn btn--s btn--gray-border" target="_parent">2014</a>  <a href="2015.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2015, Palermo"  class="btn btn--s btn--gray-border" target="_parent">2015</a>  <a href="index.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2016, Palermo" class="btn btn--s btn--orange" target="_parent">2016</a><br>
-    <a href="https://www.comune.palermo.it/opendata_dld.php?id=543" title="Opendata - Rimozione di cemento amianto negli spazi pubblici comunali nell'anno 2016, Palermo" target="_blank">da opendata Comunali</a></h1>
+  <h1>Palermo - Rimozione Aminato<br><a href="2010_13.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali negli anni 2010/13, Palermo" class="btn btn--s btn--gray-border" target="_parent">2010/13</a>  <a href="2014.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2014, Palermo"  class="btn btn--s btn--gray-border" target="_parent">2014</a>  <a href="2015.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2015, Palermo"  class="btn btn--s btn--orange" target="_parent">2015</a>  <a href="index.html" title="Mappa rimozione cemento amianto negli spazi pubblici comunali nell'anno 2016, Palermo" class="btn btn--s btn--gray-border" target="_parent">2016</a><br>
+    <a href="https://www.comune.palermo.it/opendata_dld.php?id=385" title="Opendata - Rimozione di cemento amianto negli spazi pubblici comunali nell'anno 2016, Palermo" target="_blank">da opendata Comunali</a></h1>
    </div> 
 </div>
 <div id="ods"><a href="http://opendatasicilia.it/" title="opendatasicilia.it" target="_blank"> 
