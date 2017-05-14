@@ -19,9 +19,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
-<a href="http://github.gbvitrano.it/rimozione_amianto/index.html"><img width="1000" src="http://github.gbvitrano.it/sinistri_2016/legend/sinistri_2016_800.jpg" Title=" Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." alt="Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." /></a>
+<a href="http://github.gbvitrano.it/sinistri_2016/index.html"><img width="1000" src="http://github.gbvitrano.it/sinistri_2016/legend/sinistri_2016_800.jpg" Title=" Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." alt="Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." /></a>
 
-[**Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo**](http://github.gbvitrano.it/rimozione_amianto/), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_dld.php?id=523) 
+[**Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo**](http://github.gbvitrano.it/sinistri_2016/index.html), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_dld.php?id=523) 
 
 <a href="http://github.gbvitrano.it/rimozione_amianto/index.html"><img width="1000" src="http://github.gbvitrano.it/rimozione_amianto/legend/mappa_rim_ami.jpg" Title=" Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." alt="Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." /></a>
 
