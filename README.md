@@ -107,6 +107,6 @@ Fonte dati: [Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id
 
 ## Note
 
-*Le informazioni visibili e condivise non comportano la visualizzazione di dati sensibili.<br>Data la natura esclusivamente informativa degli elaborati grafici e dei testi riportati, questi non costituiscono atti ufficiali.<br>Per accedere agli atti ufficiali si rinvia agli elaborati definitivi allegati alle specifiche deliberazioni.* 
+*Disclaimer: Le informazioni visibili e condivise non comportano la visualizzazione di dati sensibili.<br>Data la natura esclusivamente informativa degli elaborati grafici e dei testi riportati, questi non costituiscono atti ufficiali.<br>Per accedere agli atti ufficiali si rinvia agli elaborati definitivi allegati alle specifiche deliberazioni.* 
 
 **Si declina ogni responsabilità sulla veridicità dei dati.**
