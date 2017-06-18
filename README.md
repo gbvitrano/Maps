@@ -6,7 +6,7 @@
 [![web](https://img.shields.io/badge/coseerobe.it-%20--%20qui%20trovi%20tutte%20le%20mappe-%23ff0000.svg)](http://coseerobe.gbvitrano.it/) 
 [![github.gbvitrano.it](https://img.shields.io/badge/gbvitrano.github.io-github.gbvitrano.it-%23ff0000.svg)](http://github.gbvitrano.it/)
 
-<a href="http://coseerobe.gbvitrano.it/" target="_blank"><img width="1000" src="http://coseerobe.gbvitrano.it/wp/wp-content/uploads/2017/03/header_github.png" Title="coseerobe.gbvitrano.it - qui trovi tutte le altre mappe" alt="coseerobe" /></a>
+<a href="http://coseerobe.gbvitrano.it/" target="_blank"><img width="1000" src="http://gbvitrano.it/coseerobe/mappe/images/header_cer_opendata_02.jpg" Title="coseerobe.gbvitrano.it - qui trovi tutte le altre mappe" alt="coseerobe" /></a>
 
 *"...per prima cosa, bisogna fare le robe, una prima fase è mettere a fuoco le cose da fare, poi c’è una seconda fase in cui si da un nome alle singole robe da fare, perché fare delle robe senza sapere di cosa stai parlando è stato sempre un problema!<br> La terza fase è più complessa!
 Ma quando hai le robe giuste, è tutta un’altra cosa!...*"<br>
