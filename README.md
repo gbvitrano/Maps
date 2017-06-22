@@ -19,6 +19,10 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="http://siciliahub.github.io/mappe/elenco_beni_immobili/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/elenco_beni_immobili/legend/mappa_beni.jpg" Title=" Elenco degli immobili comunali del Comune di Palermo aggiornato al 31 dicembre 2016" alt="Elenco degli immobili comunali del Comune di Palermo aggiornato al 31 dicembre 2016" /></a>
+
+[**Elenco degli immobili comunali del Comune di Palermo aggiornato al 31 dicembre 2016**](http://siciliahub.github.io/mappe/elenco_beni_immobili/index.html), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_dld.php?id=849) 
+
 <a href="http://github.gbvitrano.it/sinistri_2016/index.html"><img width="1000" src="http://github.gbvitrano.it/sinistri_2016/legend/sinistri_2016_800.jpg" Title=" Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." alt="Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo." /></a>
 
 [**Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo**](http://github.gbvitrano.it/sinistri_2016/index.html), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_dld.php?id=523) 
