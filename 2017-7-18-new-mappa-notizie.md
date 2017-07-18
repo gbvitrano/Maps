@@ -9,7 +9,6 @@ Di seguito la mappa delle notizie relative agli incendi avvenuti nel nostro paes
 
 <iframe width="100%" height="900px" frameBorder="0" src="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true"></iframe><p><a href="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685">Visualizza a schermo intero</a></p>
 
-
 Per una migliore lettura della mappa si può attivare la legenda dei layer, cliccando sul link "**- Informazioni -**" in basso a destra del monitor.
 
 <img width="1000" src="http://github.gbvitrano.it/clip/legenda.jpg" Title="attiva legenda layer" alt="
