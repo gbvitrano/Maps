@@ -13,5 +13,5 @@ I marker di colore "**nero**" localizzano gli incendi registrati nell'ultima set
 
 Per una migliore lettura della mappa si può attivare la legenda dei layer, cliccando sul link "**- Informazioni -**" in basso a destra del monitor.
 
-<img width="800" src="http://github.gbvitrano.it/clip/mappa_news_800.jpg" Title="attiva legenda layer" alt="
+<img width="1000" src="http://github.gbvitrano.it/clip/legenda.jpg" Title="attiva legenda layer" alt="
 Italia a Fuoco" /></a>
