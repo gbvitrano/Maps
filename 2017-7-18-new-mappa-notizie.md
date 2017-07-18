@@ -9,4 +9,4 @@ Di seguito la mappa delle notizie relative agli incendi avvenuti nel nostro paes
 
 <iframe width="100%" height="900px" frameBorder="0" src="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true"></iframe><p><a href="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685">Visualizza a schermo intero</a></p>
 
-I marker di colore "**nero**" localizzano gli incendi registrati nell'ultima settimana, i marker di colore "**bianco**" localizzano tutte le segnalazioni nemo recenti.
+I marker di colore "**nero**" localizzano gli incendi registrati nell'ultima settimana, i marker di colore "**bianco**" localizzano tutte le segnalazioni nemo recenti, ma sempre dell'anno 2017
