@@ -8,3 +8,5 @@ Di seguito la mappa delle notizie relative agli incendi avvenuti nel nostro paes
 [Qui](http://effis.jrc.ec.europa.eu/applications/fire-news/kml/?&country__id__exact=219) il file con tutti i dati aggiornati settimanalmente.
 
 <iframe width="100%" height="900px" frameBorder="0" src="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true"></iframe><p><a href="http://umap.openstreetmap.fr/it/map/mappa-delle-news-sugli-incendi_158685">Visualizza a schermo intero</a></p>
+
+I marker di colore "**nero**" localizzano gli incendi registrati nell'ultima settimana, i marker di colore "**bianco**" localizzano tutte le segnalazioni nemo recenti.
