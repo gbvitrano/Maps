@@ -19,7 +19,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
-<a href="http://u.osmfr.org/m/158685/><img width="1000" src="http://github.gbvitrano.it/clip/mappa_news_incendi_1024.jpg" Title=" Mappa delle news sugli incendi" alt="Mappa delle news sugli incendi." /></a>
+<a href="http://u.osmfr.org/m/158685/"><img width="1000" src="http://github.gbvitrano.it/clip/mappa_news_incendi_1024.jpg" Title=" Mappa delle news sugli incendi" alt="Mappa delle news sugli incendi." /></a>
 
 [**Italia - Mappa delle news sugli incendi 2017**](http://u.osmfr.org/m/158685/)
 
