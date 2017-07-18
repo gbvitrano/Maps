@@ -21,7 +21,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="http://u.osmfr.org/m/158685/><img width="1000" src="http://github.gbvitrano.it/clip/mappa_news_incendi_1024.jpg" Title=" Mappa delle news sugli incendi" alt="Mappa delle news sugli incendi." /></a>
 
-[**Italia - Mappa delle news sugli incendi 2017 **](http://u.osmfr.org/m/158685/)
+[**Italia - Mappa delle news sugli incendi 2017**](http://u.osmfr.org/m/158685/)
 
 <a href="http://siciliahub.github.io/mappe/elenco_beni_immobili/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/elenco_beni_immobili/legend/mappa_beni.jpg" Title=" Elenco degli immobili comunali del Comune di Palermo aggiornato al 31 dicembre 2016" alt="Elenco degli immobili comunali del Comune di Palermo aggiornato al 31 dicembre 2016" /></a>
 
