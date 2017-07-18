@@ -11,4 +11,7 @@ Di seguito la mappa delle notizie relative agli incendi avvenuti nel nostro paes
 
 I marker di colore "**nero**" localizzano gli incendi registrati nell'ultima settimana, i marker di colore "**bianco**" localizzano tutte le segnalazioni nemo recenti, ma sempre dell'anno 2017.
 
-Per una migliore lettura della mappa si può attivare la legenda dei layer, cliccando sul link "**- Informazioni -**" in basso a destra del monitor
+Per una migliore lettura della mappa si può attivare la legenda dei layer, cliccando sul link "**- Informazioni -**" in basso a destra del monitor.
+
+<img width="800" src="http://github.gbvitrano.it/clip/mappa_news_800.jpg" Title="attiva legenda layer" alt="
+Italia a Fuoco" /></a>
