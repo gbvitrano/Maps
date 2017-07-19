@@ -26,9 +26,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 Nella mappa è riportata la localizzazione delle basi operative con elicotteri e mezzi aerei disponibili per la C[**Campagna Antincendio Boschivo 2017**](http://www.protezionecivile.gov.it/jcms/it/view_dossier.wp?contentId=DOS64456) della Protezione Civile e le basi aeree messe a disposizione dalle Regioni.
 
-<a href="http://u.osmfr.org/m/158685/"><img width="1000" src="http://github.gbvitrano.it/clip/mappa_news_incendi_1024.jpg" Title=" Mappa delle news sugli incendi" alt="Mappa delle news sugli incendi." /></a>
-
 ---
+
+<a href="http://u.osmfr.org/m/158685/"><img width="1000" src="http://github.gbvitrano.it/clip/mappa_news_incendi_1024.jpg" Title=" Mappa delle news sugli incendi" alt="Mappa delle news sugli incendi." /></a>
 
 [**Progetto - Italia a Fuoco**](http://italiaafuoco.info/)<br>
 [**Italia - Mappa delle news sugli incendi 2017**](http://u.osmfr.org/m/158685/) La mappa delle notizie relative agli incendi avvenuti nel nostro paese nel cosro del 2017.<br>I marker di colore "**nero**" localizzano gli incendi registrati negli ultimi sette giorni, i marker di colore "**bianco**" localizzano tutte le segnalazioni nemo recenti.<br>Ogni marker sulla mappa riporta la località, il giorno della segnalazione ed un link alla notizia che lo descrive.<br>I dati sono concessi dal progetto [EFFIS - European Forest Fire Information System](http://effis.jrc.ec.europa.eu/applications/fire-news/) segnalato da [Andrea Borruso](https://twitter.com/aborruso).<br>
