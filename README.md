@@ -46,6 +46,7 @@ Nella mappa è riportata la localizzazione delle basi operative con elicotteri e
 
 - [**Sinistri stradali rilevati nel territorio comunale di Palermo nell'anno 2016 dalla polizia municipale di Palermo**](http://github.gbvitrano.it/sinistri_2016/index.html), elaborata con #Qgis e il plugin #qgis2web con gli [Opendata del Comune di Palermo](https://www.comune.palermo.it/opendata_dld.php?id=523) 
 
+
 ---
 
 <a href="http://github.gbvitrano.it/rimozione_amianto/index.html"><img width="1000" src="http://github.gbvitrano.it/rimozione_amianto/legend/mappa_rim_ami.jpg" Title=" Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." alt="Palermo - Rimozione di cemento amianto negli spazi pubblici comunali dall'anno 2010 al 2016 su base opendata." /></a>
@@ -58,6 +59,8 @@ Nella mappa è riportata la localizzazione delle basi operative con elicotteri e
 
 - [**Palermo, Piano Comunale di emergenza Protezione Civile**](http://github.gbvitrano.it/ppc/index.html)
 
+---
+
 <a href="http://github.gbvitrano.it/atlante_palermo/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_palermo/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
 - [**Atlante delle cartografie tecniche storiche di Palermo - (beta version 2.0)**](http://github.gbvitrano.it/atlante_palermo/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
@@ -68,24 +71,27 @@ Nella mappa è riportata la localizzazione delle basi operative con elicotteri e
 
 - [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](http://gbvitrano.it/qgis/variante_generale/cambia-menti.html)<br> elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
-<a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
-
 ---
+
+<a href="http://github.gbvitrano.it/atlante_carto_pa/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_carto_pa/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
 - **Osservare il cambiamento di una città grazie alla cartografia: il caso di Palermo**<br>
 [**Atlante delle cartografie tecniche storiche di Palermo**](http://github.gbvitrano.it/atlante_carto_pa/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
-<a href="http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
-
 ---
+
+<a href="http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa_03.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
 
 - [**Variante Generale al P.R.G. - Palermo - 2004**](http://egdisegno.studiovitrano.it/variante_generale/Zonizzazione.html) elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
-<a href="http://github.gbvitrano.it/prg_pa_2004/zon_vin/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
-
 ---
 
+<a href="http://github.gbvitrano.it/prg_pa_2004/zon_vin/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/prg_2004_pa.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
+
+
 - [**Variante Generale al P.R.G. - Palermo - 2004 - Zonizzazione**](http://github.gbvitrano.it/prg_pa_2004/zon_vin/) elaborata con Qgis e le plugin  qgis2leaf e qgis2web con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
+
+---
 
 <a href="http://github.gbvitrano.it/carto_omira"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/carto_omira.jpg" Title="Carta Tecnica di Palermo - OMIRA - scala: 1:5000" alt="Carta Tecnica di Palermo - OMIRA" /></a>
 
@@ -95,19 +101,20 @@ Nella mappa è riportata la localizzazione delle basi operative con elicotteri e
 
 <a href="http://github.gbvitrano.it/spesa_conuni_mobilit%C3%A0/"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/mappa_sicilia_spesa_mobilit%C3%A0_01.jpg" Title="Comuni Siciliani- spesa per la mobilità - anno 2014" alt="Comuni Siciliani- spesa per la mobilità" /></a>
 
----
-
 - [**Comuni Siciliani- spesa per la mobilità - anno 2014**](http://github.gbvitrano.it/spesa_conuni_mobilit%C3%A0/), [fonte dati](http://blog.openpolis.it/2017/03/22/quanto-spendono-comuni-la-mobilita);
+
+
+---
 
 <a href="http://github.gbvitrano.it/carto_storica/carto_switch.html"><img width="1000" src="http://coseerobe.gbvitrano.it/mappe/images/mappa_carto_storica.jpg" Title="Esplorare Palermo - Cartografica storica" alt="Cartografia Storica Palermo" /></a>
 
----
-
 - [**Esplorare Palermo - Cartografica storica**](http://github.gbvitrano.it/carto_storica) e [**Cartografica storica con switch per cambio base mappa**](http://github.gbvitrano.it/carto_storica/carto_switch.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
+
+---
 
 <a href="http://github.gbvitrano.it/prg_2025/prg_2015.html"><img width="1000" src="http://coseerobe.gbvitrano.it/wp/wp-content/uploads/2017/03/mappa_carto_pa.jpg?w=1024" Title="Palermo 2025 - Plamimetria schema di massima del PRG" alt="Palermo 2025 - Plamimetria schema di massima del PRG" /></a>
 
----
+
 
 - [**Palermo 2025 - Plamimetria schema di massima del PRG**](http://github.gbvitrano.it/prg_2025/prg_2015.html) con [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
