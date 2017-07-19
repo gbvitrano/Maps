@@ -60,13 +60,11 @@ Nella mappa è riportata la localizzazione delle basi operative con elicotteri e
 
 <a href="http://github.gbvitrano.it/atlante_palermo/index.html"><img width="1000" src="http://github.gbvitrano.it/atlante_palermo/images/atlante.jpg" Title=" Atlante - Cartografie storiche di Palermo - scala 1:5000" alt="Atlante delle cartografie tecniche storiche di Palermo" /></a>
 
----
-
 - [**Atlante delle cartografie tecniche storiche di Palermo - (beta version 2.0)**](http://github.gbvitrano.it/atlante_palermo/index.html) con [@aborruso](https://twitter.com/aborruso), [@piersoft](https://twitter.com/Piersoft), [@cirospat](https://twitter.com/cirospat), [@napo](https://twitter.com/napo);
 
-<a href="http://gbvitrano.it/qgis/variante_generale/cambia-menti.html"><img width="1000" src="http://gbvitrano.it/qgis/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
-
 ---
+
+<a href="http://gbvitrano.it/qgis/variante_generale/cambia-menti.html"><img width="1000" src="http://gbvitrano.it/qgis/variante_generale/legend/cambia-menti.jpg" Title="Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025" alt="Cambia-menti..." /></a>
 
 - [**Cambia-menti... #Palemro ...Variante Generale PRG 2004 vs Schema di massima del PRG 2025**](http://gbvitrano.it/qgis/variante_generale/cambia-menti.html)<br> elaborata con #Qgis e il plugin  #qtiles e #Leaflet con gli [Opendata del Comune di Palermo](http://www.comune.palermo.it/opendata_dld.php?id=320)
 
@@ -151,8 +149,6 @@ La vulnerabilità sismica rappresenta una misura della maggiore o minore capacit
 - [**Modello digitale del terreno ed estrazione delle curve di livello**](http://github.gbvitrano.it/dem_palermo);
 
 <a href="http://github.gbvitrano.it/prg_pa_2004/prg_2004.html"><img width="1000" src="http://coseerobe.gbvitrano.it/wp/wp-content/uploads/2016/11/mappe_prg.jpg" Title="Zonizzazione e vincoli sul territorio della Città di Palermo" alt="Zonizzazione e vincoli sul territorio della Città di Palermo" /></a>
-
----
 
 - [**Variante Generale al P.R.G. - Palermo - 2004 - Zonizzazione**](http://github.gbvitrano.it/prg_pa_2004/prg_2004.html)<br>
 Zonizzazione e vincoli sul territorio adeguati ai D. Dir 558 e 124/DRU/02 di approvazione - Luglio 2003 - Presa D'atto Delibera 7/2004;
