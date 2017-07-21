@@ -19,6 +19,13 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="http://siciliahub.github.io/mappe/EMSR213/Vesuvio/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/EMSR213/Vesuvio/legend/vesuvio_1024.jpg" Title=" L'incendio Vesuvio, una situazione drammatica vista da COPERNICUS - Emergency Management Service" /></a>
+
+- [**Progetto - Italia a Fuoco**](http://italiaafuoco.info/)<br>
+[**L'incendio Vesuvio, una situazione drammatica vista da COPERNICUS - Emergency Management Service**](http://siciliahub.github.io/mappe/EMSR213/Vesuvio/index.html)
+
+---
+
 <a href="http://u.osmfr.org/m/159107/"><img width="1000" src="http://github.gbvitrano.it/clip/mappa_basi_mezzi_1024.jpg" Title=" Protezione Civile - La flotta aerea anticendio dello Stato - 2017" /></a>
 
 - [**Progetto - Italia a Fuoco**](http://italiaafuoco.info/)<br>
