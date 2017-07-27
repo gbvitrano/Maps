@@ -19,6 +19,12 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="http://siciliahub.github.io/mappe/EMSR213/incendi_sicilia/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/EMSR213/incendi_sicilia/legend/Sicilia_1024.jpg" Title="Mappa incendi Sicilia con i dati EFFIS -  COPERNICUS - Emergency Management Service" /></a>
+
+- [**Mappa incendi Sicilia con i dati EFFIS -  COPERNICUS - Emergency Management Service**](http://siciliahub.github.io/mappe/EMSR213/incendi_sicilia/index.html)
+
+---
+
 <a href="http://siciliahub.github.io/mappe/EMSR213/Vesuvio/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/EMSR213/Vesuvio/legend/vesuvio_1024.jpg" Title=" L'incendio Vesuvio, una situazione drammatica vista da COPERNICUS - Emergency Management Service" /></a>
 
 - [**Progetto - Italia a Fuoco**](http://italiaafuoco.info/)<br>
