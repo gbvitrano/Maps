@@ -37,7 +37,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 - [**Progetto - Italia a Fuoco**](http://italiaafuoco.info/)<br>
 [**Protezione Civile - La flotta aerea anticendio dello Stato - 2017**](http://u.osmfr.org/m/159107/)
 
-Nella mappa è riportata la localizzazione delle basi operative con elicotteri e mezzi aerei disponibili per la C[**Campagna Antincendio Boschivo 2017**](http://www.protezionecivile.gov.it/jcms/it/view_dossier.wp?contentId=DOS64456) della Protezione Civile e le basi aeree messe a disposizione dalle Regioni.
+Nella mappa è riportata la localizzazione delle basi operative con elicotteri e mezzi aerei disponibili per la [**Campagna Antincendio Boschivo 2017**](http://www.protezionecivile.gov.it/jcms/it/view_dossier.wp?contentId=DOS64456) della Protezione Civile e le basi aeree messe a disposizione dalle Regioni.
 
 ---
 
