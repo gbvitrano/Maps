@@ -22,7 +22,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="http://siciliahub.github.io/mappe/datiallefiamme/index.html#6/41.656/12.239"><img width="1000" src="http://siciliahub.github.io/mappe/datiallefiamme/legend/mappa_incendi_1024.jpg" Title="Mappa incendi boschivi dal 2009 a maggio 2016" /></a>
 
-- [**Mappa incendi boschivi dal 2009 a maggio 2016**](http://siciliahub.github.io/mappe/datiallefiamme/index.html#6/41.656/12.239) versione beta in progress!
+- [**Mappa incendi boschivi dal 2009 a maggio 2016**](http://siciliahub.github.io/mappe/datiallefiamme/index.html#6/41.656/12.239)
 
 ---
 
