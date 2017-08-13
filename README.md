@@ -19,6 +19,11 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="http://siciliahub.github.io/mappe/aree_emergenza/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/aree_emergenza/legend/aree_emergenza.jpg" Title="Regione Sicilia - Proezione Civilie - Aree di Emergenza, su base opendata" /></a>
+
+- [**Mappa Aree di Emergenza, Regione Sicilia - Proezione Civilie su base opendata - Beta Version**](http://siciliahub.github.io/mappe/aree_emergenza/index.html)
+
+---
 
 <a href="http://siciliahub.github.io/mappe/datiallefiamme/index.html#6/41.656/12.239"><img width="1000" src="http://siciliahub.github.io/mappe/datiallefiamme/legend/mappa_incendi_1024.jpg" Title="Mappa incendi boschivi dal 2009 a maggio 2016" /></a>
 
