@@ -21,7 +21,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="http://siciliahub.github.io/mappe/aree_emergenza/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/aree_emergenza/legend/aree_emergenza.jpg" Title="Regione Sicilia - Proezione Civilie - Aree di Emergenza, su base opendata" /></a>
 
-- [**Mappa Aree di Emergenza, Regione Sicilia - Proezione Civilie su base opendata - Beta Version**](http://siciliahub.github.io/mappe/aree_emergenza/index.html)
+- [**Mappa Aree di Emergenza, Regione Sicilia - Proezione Civilie su base opendata**](http://siciliahub.github.io/mappe/aree_emergenza/index.html)
 
 ---
 
