@@ -19,6 +19,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+
 <a href="http://siciliahub.github.io/mappe/wrld/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/wrld/legend/3d_wrld.jpg" Title="RPalermo 3D Maps © WRLD" /></a>
 
 - [**Palermo 3D Maps © WRLD**](http://siciliahub.github.io/mappe/wrld/index.html)
