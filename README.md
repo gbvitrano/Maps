@@ -21,9 +21,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 
 
-<a href="http://siciliahub.github.io/mappe/comuniafuoco/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/comuniafuoco/legend/mappa_comuniafuoco.jpg" Title="Comuni a fuoco #FoiaeFiamme" /></a>
+<a href="http://siciliahub.github.io/mappe/comuniafuoco/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/comuniafuoco/legend/mappa_comuniafuoco.jpg" Title="Comuni a fuoco - #FoiaeFiamme - Richiesta di accesso civico" /></a>
 
-- [**Comuni a fuoco #FoiaeFiamme**](http://siciliahub.github.io/mappe/comuniafuoco/index.html)
+- [**Comuni a fuoco - #FoiaeFiamme - Richiesta di accesso civico**](http://siciliahub.github.io/mappe/comuniafuoco/index.html)
 
 ---
 
