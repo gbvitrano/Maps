@@ -20,6 +20,11 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 # Passion mapping...
 
 
+<a href="http://siciliahub.github.io/mappe/pai_palermo/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/pai_palermo/legend/pai_pa.jpg" Title="Piano per l’Assetto Idrogeologico (PAI) - Palermo" /></a>
+
+- [**Piano per l’Assetto Idrogeologico (PAI) - Palermo**](http://siciliahub.github.io/mappe/comuniafuoco/index.html)
+
+---
 
 <a href="http://siciliahub.github.io/mappe/comuniafuoco/index.html"><img width="1000" src="http://siciliahub.github.io/mappe/comuniafuoco/legend/mappa_comuniafuoco.jpg" Title="Comuni a fuoco - #FoiaeFiamme - Richiesta di accesso civico" /></a>
 
