@@ -21,7 +21,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="http://siciliahub.github.io/mappe/pai_palermo/index.html"><img width="1000" src="https://siciliahub.github.io/mappe/palermo_hub/legend/variante_generale.jpg" Title="Palermo hub" /></a>
 
-- [**Palermo Hub - Work in progress...**](https://siciliahub.github.io/mappe/palermo_hub/index_prg.html)
+- [**Palermo Hub - (contenitore di mappe su Palermo) Work in progress...**](https://siciliahub.github.io/mappe/palermo_hub/index_prg.html)
 
 ---
 
