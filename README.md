@@ -19,7 +19,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
-<a href="http://siciliahub.github.io/mappe/pai_palermo/index.html"><img width="1000" src="https://siciliahub.github.io/mappe/palermo_hub/legend/variante_generale.jpg" Title="Palermo hub" /></a>
+<a href="http://siciliahub.github.io/mappe/pai_palermo/index.html"><img width="1000" src="https://siciliahub.github.io/mappe/palermo_hub/legend/clip_index/palermo_hub1.jpg" Title="Palermo hub" /></a>
 
 - [**Palermo Hub - (contenitore di mappe su Palermo) Work in progress...**](https://siciliahub.github.io/mappe/palermo_hub/index_prg.html)
 
