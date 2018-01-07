@@ -19,6 +19,12 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+<a href="https://siciliahub.github.io/mappe/geolocation/geolocation.html"><img width="1000" src="http://siciliahub.github.io/mappe/geolocation/images/geo_ods.jpg" Title="Geocodifica il tuo indirizzo" /></a>
+
+[**Geocodifica il tuo indirizzo - Work in progress...**](https://siciliahub.github.io/mappe/geolocation/geolocation.html)
+
+---
+
 <a href="https://siciliahub.github.io/mappe/palermo_hub/index.html"><img width="1000" src="https://siciliahub.github.io/mappe/palermo_hub/legend/clip_index/palermo_hub2.jpg" Title="Palermo hub" /></a>
 
 - [**Palermo Hub - (contenitore di mappe su Palermo) Work in progress...**](https://siciliahub.github.io/mappe/palermo_hub/index_prg.html)
