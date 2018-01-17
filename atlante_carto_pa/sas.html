@@ -21,8 +21,10 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
   ga('create', 'UA-87653723-1', 'auto');
   ga('send', 'pageview');
+
 </script>
 <!-- Open Graph Protocol -->
 <meta property="og:title" content="Atlante delle Carte Tecniche di Palermo" />
@@ -252,6 +254,8 @@ Le cartografie storiche in dotazione al <a href="https://www.comune.palermo.it/"
         var southWest = L.latLng(38.098969492479725, 13.41679573059082),
             northEast = L.latLng(38.13779704369437, 13.310022354125977),
     	      bounds = L.latLngBounds(southWest, northEast);
+
+
         var map = L.map('map', {attributionControl:true}).setView([38.11127,13.3534422], 14 );
 var basemaps = [
 		  		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -284,12 +288,15 @@ minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,
 		  label: 'ESRI Satellite'
               }),
 		        ];
+
 			       var sas = L.tileLayer.mask("http://mapwarper.net/maps/tile/19785/{z}/{x}/{y}.png", {
       attribution: '<a href="https://github.com/frogcat/leaflet-tileoverlay-mask" target="_blank" title="Leaflet-tileoverlay-mask">Leaflet-tileoverlay-mask</a> - Cartografia storica - Carta Tecnica di Palermo - Sas 1987 - Rielaborazione di: <a href="https://twitter.com/aborruso" target="_blank" title="Andrea Borruso">@aborruso</a>, <a href="https://twitter.com/napo"target="_blank" title="Maurizio Napolitano">@napo</a>, <a href=" https://twitter.com/Piersoft" target="_blank" title="Francesco Piero Paolicelli">@piersoft</a>, <a href="https://twitter.com/cirospat" target="_blank" title="Ciro Spataro">@cirospat</a> e <a href="https://twitter.com/gbvitrano" target="_blank" title="Giovan Battista Vitrano">@gbvitrano</a> per <a href="https://twitter.com/opendatasicilia" target="_blank" title="opendatasicilia">@opendatasicilia</a>',
   minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,
         }); sas.addTo(map);
+
         var overlays = {
           };
+
          map.on("mousemove", function(e) {
            sas.setCenter(e.containerPoint.x, e.containerPoint.y);	   
          }).zoomControl.setPosition("topleft");
@@ -367,8 +374,8 @@ minZoom: 13,   maxZoom: 17, maxNativeZoom: 17,
   </tbody>
 </table>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://siciliahub.github.io/mappe/palermo_hub/data/blurbox/blurbox.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://siciliahub.github.io/mappe/palermo_hub/data/blurbox/blurbox.js"></script>
 <script>
 setTimeout(function() {
 	var bb = $('#blurbox').blurbox({blur: 10, animateBlur: true, bgColor: 'rgba(255,255,0,0.2)'})
