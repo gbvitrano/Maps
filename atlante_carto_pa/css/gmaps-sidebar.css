@@ -60,8 +60,10 @@
       overflow: hidden;
       transition: all 80ms; }
       .sidebar-tabs > li:hover, .sidebar-tabs > ul > li:hover {
-        color: #000;
-        background-color: #fff9e6; }
+	color: #000;
+	background-color: #fff9e6;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
       .sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
         color: #000;
         background-color: #febf00; }
