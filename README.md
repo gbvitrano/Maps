@@ -21,7 +21,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 <a href="https://siciliahub.github.io/mappe/geolocation/geolocation.html"><img width="1000" src="http://siciliahub.github.io/mappe/geolocation/images/geo_ods.jpg" Title="Geocodifica il tuo indirizzo" /></a>
 
-[**Geocodifica il tuo indirizzo - Work in progress...**](https://siciliahub.github.io/mappe/geolocation/geolocation.html)
+[**Geocodifica il tuo indirizzo!**](https://siciliahub.github.io/mappe/geolocation/geolocation.html)
 
 ---
 
