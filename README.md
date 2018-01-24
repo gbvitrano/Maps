@@ -25,8 +25,9 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 ---
 
-**Palermo Hub** di [**opendatasicilia.it**](http://opendatasicilia.it/) è un contenitore di mappe realizzate/rielaborate da liberi cittadini o da civic hackers prevalentemente sul territorio comunale di Palermo, non ha alcun intento commerciale, l’unica finalità è mostrare le possibilità di rielaborazione e comunicazione offerte dagli open data o dati pubblici comunali, regionali e nazionali. <br> <br>
-[**PalermoHub - Demo**](https://siciliahub.github.io/palermohub/index.html/) <a href="https://siciliahub.github.io/palermohub/index.html/"><img width="80" src="https://siciliahub.github.io/palermohub/legend/beta.png" Title=" PalermoHub beta version" /></a>
+<a href="https://siciliahub.github.io/palermohub/index.html/"><img width="1000" src="https://coseerobe.gbvitrano.it/rec/wp-content/uploads/2016/11/palermo_hub01-1.jpg" Title="Palermo Hub è un contenitore di mappe realizzate/rielaborate da liberi cittadini o da civic hackers prevalentemente sul territorio comunale di Palermo, non ha alcun intento commerciale, l’unica finalità è mostrare le possibilità di rielaborazione e comunicazione offerte dagli open data o dati pubblici comunali, regionali e nazionali." /></a><br>
+
+**Palermo Hub** di [**opendatasicilia.it**](http://opendatasicilia.it/) è un contenitore di mappe realizzate/rielaborate da liberi cittadini o da civic hackers prevalentemente sul territorio comunale di Palermo, non ha alcun intento commerciale, l’unica finalità è mostrare le possibilità di rielaborazione e comunicazione offerte dagli open data o dati pubblici comunali, regionali e nazionali. 
 
 ---
 
