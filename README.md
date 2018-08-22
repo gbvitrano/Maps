@@ -19,6 +19,7 @@ Tutto il materiale da me rielaborato e pubblicato su github può essere clonato 
 
 # Passion mapping...
 
+
 <a href="http://bit.ly/pontieviadotti"><img width="1000" src="http://siciliahub.github.io/mappe/pontieviadotti/mappa_pontieviadotti_02.jpg" Title="Ponti e viadotti italiani – 2018" /></a>
 
 - [**Ponti e Viadotti italiani - Agosto 2018**](https://github.com/SiciliaHub/mappe/tree/gh-pages/pontieviadotti) estratti da [OSM](https://www.openstreetmap.org) utilizzando [overpass-turbo.eu](http://overpass-turbo.eu)
