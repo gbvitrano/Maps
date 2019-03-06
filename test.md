@@ -6,3 +6,5 @@
 [Google!](http://google.com){:target="_blank"}
 
 [My Github](https://github.com/cmatskas" target="_blank")
+
+[Go to this page](http://somelink.com/?target=_blank)
