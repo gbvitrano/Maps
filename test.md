@@ -15,7 +15,7 @@
 
 [Go to this page](http://somelink.com/?target=_blank)
  
-[Hello, world!](http://example.com/){target="_blank"}
+[Hello, world!](http://example.com/){:target="_blank"}
 
 <a href="example.com" target="_blank">New Tab</a>
 
