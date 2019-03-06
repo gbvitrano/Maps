@@ -1,8 +1,3 @@
-<head>
-<meta charset="utf-8">
- <base target="_blank">
-</head>
-
 [Google!](https://google.it "Google!")
 
 [Google!](https://google.it title="Google!")
