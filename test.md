@@ -1,3 +1,10 @@
+<head>
+<meta charset="utf-8">
+<title>Documento senza titolo</title>
+  <base target="_blank">
+</head>
+
+
 
 [Google!](http://google.com){:target='_blank'}
 
@@ -12,3 +19,5 @@
 [Hello, world!](http://example.com/){target="_blank"}
 
 <a href="example.com" target="_blank">New Tab</a>
+
+[Google](https://google.com " target="_blank)
